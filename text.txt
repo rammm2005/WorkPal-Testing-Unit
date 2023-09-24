@@ -1,0 +1,137 @@
+//     const images = [
+    //     "resource/image/bg-section/1.png",
+    //     "resource/image/bg-section/2.png",
+    //     "resource/image/bg-section/3.png",
+    // ];
+
+    // const descriptionNames = ["Mrs.Sonia", "John Doe", "Alice Smith"];
+    // const textDes = ["Influencer", "Designer", "Writer"];
+
+    // let currentImageIndex = 0;
+
+    // function changeImage() {
+    //     $(".freelance-img img").attr("src", images[currentImageIndex]);
+    //     $(".description-name").text(descriptionNames[currentImageIndex]);
+    //     $(".text-des").text(textDes[currentImageIndex]);
+
+    //     currentImageIndex = (currentImageIndex + 1) % images.length;
+    // }
+
+    // setInterval(changeImage, 5000);
+
+
+    
+.freelance-img-wrapper .freelance-img{
+    margin-left: auto;
+}
+
+.freelance-img-wrapper .freelance-img img{
+    justify-content: flex-end;
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: end;
+    background-size: cover;
+}
+
+
+$(document).ready(function() {
+    var currentIndex = 0;
+    var slides = $('.popular-service');
+
+    function showSlide(index) {
+        slides.css('transform', 'translateX(' + (-index * 100) + '%)');
+    }
+
+    function updateParallax() {
+        var scrollTop = $(window).scrollTop();
+        slides.each(function(index, slide) {
+            var offset = $(slide).offset().top;
+            var translateY = (scrollTop - offset) * 0.5;
+            $(slide).css('transform', 'translateY(' + translateY + 'px)');
+        });
+    }
+
+   
+    showSlide(currentIndex);
+
+    $('.right-arrow').click(function() {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            showSlide(currentIndex);
+        }
+    });
+
+    
+    $('.left-arrow').click(function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            showSlide(currentIndex);
+        }
+    });
+
+    $(window).scroll(function() {
+        updateParallax();
+    });
+});
+
+
+
+#carousel .prev-arrow {
+    position: absolute;
+    font-size: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 0.5;    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    line-height: 2rem;
+}
+#carousel .prev-arrow i{
+    cursor: pointer;
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    color: var(--bg-lime-green);
+    font-weight: 800;
+    border-radius: 999px;
+    z-index: 1;    
+}
+
+#carousel .next-arrow {
+    position: absolute;
+    font-size: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 0.5;    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 2rem;
+
+}
+
+#carousel .next-arrow i{
+    cursor: pointer;
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    color: var(--bg-lime-green);
+    font-weight: 800;
+    border-radius: 999px;
+    z-index: 1;
+}
+
+#carousel .prev-arrow i:hover,
+#carousel .next-arrow i:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: var(--scroller-tumb);
+    transition: all ease .8s;
+} 

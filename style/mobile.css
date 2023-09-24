@@ -1,0 +1,541 @@
+@import url(core.css);
+
+@media only screen and (max-width:1024px){
+    html {
+        font-size: 55%;
+    }
+
+
+    .header-wrapper .toogle-search {
+        display: flex;
+        position: relative;
+    }
+
+
+    .header-wrapper .workpal-nav ul .nav-link {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin: 0;
+    }
+
+    /* search */
+    .main-header .header-wrapper .search-header .search-form {
+        display: none;
+    }
+
+    .header-wrapper .toogle-search-btn{
+        display: flex;
+    }
+
+    /* iamges header freelance owner*/
+    .freelance-img-wrapper {
+        height: auto;
+        top: 0;
+        margin-top: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    /* arrow slider popular image */
+    #carousel .arrow {
+        margin-top: -25%;
+        opacity: 1;
+    }
+
+    /* Product List */
+
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+        align-content: center;
+        min-height: 100vh;
+        max-width: 100%;
+    }
+
+    .product-wrapper .product-content .img-poster .slide-img {
+        width: 100%;
+        max-height: 17vh;
+    }
+
+    /* popular slider */
+    .popular-service-slider .popular-service .popular-link .popular-img {
+        width: 100%;
+        flex:1 0 auto;
+
+    }
+
+    /* Why choose us */
+    .section-wokpal-solution {
+        flex-direction: column;
+    }
+
+    .section-wokpal-solution .left-content {
+        max-width: 100%;
+    }
+
+    .section-wokpal-solution .right-content {
+        width: 100%;
+        margin-top: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .section-wokpal-solution .right-content .img-content img {
+        opacity: .5;
+        object-fit: cover;
+        object-position: center;
+        max-width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+
+    .header-wrapper .toogle-search {
+        display: flex;
+        position: relative;
+    }
+
+
+    .header-wrapper .workpal-nav ul .nav-link {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin: 0;
+    }
+
+    /* search */
+    .main-header .header-wrapper .search-header .search-form {
+        display: none;
+    }
+
+    .header-wrapper .toogle-search-btn{
+        display: flex;
+    }
+
+    /* iamges header freelance owner*/
+    .freelance-img-wrapper {
+        height: auto;
+        top: 0;
+        margin-top: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    /* arrow slider popular image */
+    #carousel .arrow {
+        margin-top: -30%;
+        opacity: 1;
+    }
+
+    /* Product List */
+
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+        align-content: center;
+        min-height: 100vh;
+        max-width: 100%;
+    }
+
+    .product-wrapper .product-content .img-poster .slide-img {
+        width: 100%;
+        max-height: 17vh;
+    }
+
+    /* popular slider */
+    .popular-service-slider .popular-service .popular-link .popular-img {
+        max-width: fit-content;
+        flex:0;
+        width: auto;
+    }
+
+    /* Why choose us */
+    .section-wokpal-solution {
+        flex-direction: column;
+    }
+
+    .section-wokpal-solution .left-content {
+        max-width: 100%;
+    }
+
+    .section-wokpal-solution .right-content {
+        width: 100%;
+        margin-top: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .section-wokpal-solution .right-content .img-content img {
+        opacity: .5;
+        object-fit: cover;
+        object-position: center;
+        max-width: 70%;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    /* Header */
+    main {
+        padding: 2rem 6%;
+    }
+
+    .main-conteiner {
+        padding: 2rem;
+    }
+
+    .header-wrapper .workpal-nav {
+        display: none;
+    }
+
+    .header-wrapper .icons {
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .logo-workpal img {
+        max-width: 10rem;
+    }
+
+    .category-menu .prev {
+        margin-left: -1.5rem;
+    }
+
+    .category-menu .next {
+        right: 0;
+        margin-right: 1.5rem;
+    }
+
+    .main-header {
+        position: fixed;
+        justify-content: center;
+    }
+
+    .main-header .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-wrapper .toogle-nav,
+    .header-wrapper .toogle-search-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .category-menu .category-menu-wrapper {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .main-header .header-wrapper .search-header .search-form {
+        display: none;
+    }
+
+    /* Product List */
+
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+        align-content: center;
+        min-height: 100vh;
+        max-width: 100%;
+    }
+
+    .product-wrapper .product-content .img-poster .slide-img {
+        width: 100%;
+        max-height: 25vh;
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .btn-checkout {
+        font-size: 1.8rem;
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price .rating {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price .rating i {
+        color: var(--text-star);
+        font-size: 1.9rem;
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price .rating i:hover {
+        transform: scale(1.1);
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price p {
+        color: var(--text-black);
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    /* Popular Slider */
+
+    .popular-service-slider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(0, 0fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 9px;
+        overflow: hidden;
+        white-space: none;
+    }
+
+    .popular-service-slider .popular-service .popular-link .popular-img {
+        width: auto;
+        max-width: 100%;
+        flex:1 0 100%;
+        object-fit: cover;
+    }
+
+    /* slider popular arrow set */
+
+
+    #carousel .arrow {
+        margin-top: -45%;
+        opacity: 1;
+    }
+
+    #carousel .arrow i {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    /* end */
+
+
+    /* company ever use  */
+    .section-company {
+        padding: 2rem;
+    }
+
+    .section-company .logo-big-company {
+        gap: 3px;
+    }
+
+    .section-company .logo-big-company .img-element {
+        margin-left: .5rem;
+        max-width: calc(8rem / 2);
+    }
+
+    .freelance-img-wrapper {
+        height: auto;
+        top: 0;
+        margin-top: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    /* Why have choose Us */
+
+    .section-wokpal-solution {
+        flex-direction: column;
+    }
+
+    .section-wokpal-solution .left-content {
+        max-width: 100%;
+    }
+
+    .section-wokpal-solution .right-content {
+        width: 100%;
+        margin-top: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .section-wokpal-solution .right-content .img-content img {
+        opacity: .5;
+        object-fit: cover;
+        object-position: center;
+        max-width: 70%;
+    }
+
+    .section-footer .footer-wrapper .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(0, 0fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
+    }
+
+    .section-footer .footer-wrapper .bottom-footer .logo {
+        max-width: 12rem;
+    }
+
+}
+
+
+@media (max-width:450px) {
+    html {
+        font-size: 40%;
+    }
+
+
+    /* Icons Header  toogle*/
+    .header-wrapper .icons{
+        gap: 10px;
+    }
+
+    .popular-service-slider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(0, 0fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+        overflow: hidden;
+        white-space: none;
+    }
+
+    /* product */
+
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+        min-height: 100vh;
+        max-width: 100%;
+    }
+
+    .product-wrapper .product-content .img-poster .slide-img {
+        width: 100%;
+        max-height: 20vh;
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price .rating {
+        font-size: 1.5rem;
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price .rating i {
+        color: var(--text-star);
+        font-size: 1.6rem;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price .rating i:hover {
+        transform: scale(1.1);
+    }
+
+    .product-wrapper .product-content .product-card .footer-card .price p {
+        margin-top: .2rem;
+        color: var(--text-black);
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+
+
+    .product-wrapper .product-content .product-card .footer-card .btn-checkout {
+        font-size: .9rem;
+        display: flex;
+        flex-wrap: nowrap;
+        width: fit-content;
+    }
+
+    /* Category prev icon */
+    .category-menu .prev {
+        margin-left: -1rem;
+    }
+
+    /* company ever use  */
+    .section-company {
+        padding: .5rem;
+    }
+
+    .section-company .logo-big-company {
+        gap: 3px;
+    }
+
+    .section-company .logo-big-company .img-element {
+        margin-left: .5rem;
+        max-width: calc(12rem / 2);
+    }
+
+    .section-slideshow .header-title {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        padding: 1rem;
+        left: 3rem;
+        bottom: 65%;
+        top: 15%;
+        align-items: center;
+        text-align: left;
+    }
+
+    .freelance-img-wrapper {
+        height: auto;
+        top: 0;
+        margin-top: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    /* why choose Us */
+    .section-wokpal-solution {
+        flex-direction: column;
+    }
+
+    .section-wokpal-solution .left-content {
+        max-width: 100%;
+    }
+
+    .section-wokpal-solution .right-content {
+        width: 100%;
+        margin-top: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .section-wokpal-solution .right-content .img-content img {
+        opacity: .5;
+        object-fit: cover;
+        object-position: center;
+        max-width: 70%;
+    }
+
+    /* footer */
+    .section-footer .footer-wrapper .bottom-footer .logo {
+        max-width: 12rem;
+    }
+
+
+}
