@@ -198,6 +198,18 @@
 
 @media(max-width:768px) {
 
+    body.active::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 999;
+        pointer-events: none;
+      }
+
     /* Header */
     main {
         padding: 2rem 6%;
@@ -221,7 +233,7 @@
         flex-direction: row;
         position: fixed;
         inset: 0 0 0 30%;
-        background-color:var(--bg-box);
+        background-color:#e8f0e8aa;
         backdrop-filter: blur(2rem);
         z-index: 90;
         transform: translateX(100%);
@@ -234,7 +246,7 @@
 
     @supports(backdrop-filter: blur(2rem)){
         .main-header .header-wrapper .workpal-nav {
-            background-color:var(--bg-box);
+            background-color:#e8f0e8aa;
             backdrop-filter: blur(2rem);
         }
         .toogle-nav .sr-auto{
@@ -272,7 +284,7 @@
     .workpal-nav .nav-link .text-link ,
     .workpal-nav .nav-link span{
         align-items: start;
-        font-size: 2.4rem;
+        font-size: 2.7rem;
         color: var(--text-black);
         font-weight: 500;
     }

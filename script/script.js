@@ -31,27 +31,28 @@ $(document).ready(function () {
     
   });
 
-  toogleNav.click(function(){
-    toogleNav.addClass('active');
-    if(toogleNav.hasClass('active')){
-      const visiblelity = navLink.attr("data-visible");
-      console.log(visiblelity);
-      if(visiblelity === "false"){
-        $(navLink).attr("data-visible", "true" );
-        $(toogleNav).attr("aria-expanded" ,"true");
-         $(closeNav).css("transfrom","translateX(0)");
-         
-      }else if(visiblelity === "true"){
-        $(navLink).attr("data-visible" , "false");
-        $(toogleNav).attr("aria-expanded" ,"false");
-        $(closeNav).css("transfrom","translateX(100%)");
-         toogleNav.removeClass('active'); 
-         
-      }
-    }else{
-        toogleNav.removeClass('active'); 
+  toogleNav.click(function () {
+  $("body").toggleClass("active");
+  $(toogleNav).addClass("active");
+
+  if (toogleNav.hasClass('active')) {
+    const visiblelity = navLink.attr("data-visible");
+    console.log(visiblelity);
+    if (visiblelity === "false") {
+      $(navLink).attr("data-visible", "true");
+      $(toogleNav).attr("aria-expanded", "true");
+      $(closeNav).css("transform", "translateX(0)");
+    } else if (visiblelity === "true") {
+      $(navLink).attr("data-visible", "false");
+      $(toogleNav).attr("aria-expanded", "false");
+      $(closeNav).css("transform", "translateX(100%)");
+      toogleNav.removeClass('active');
     }
-  });
+  } else {
+    $("body").removeClass("active"); 
+  }
+});
+
 
 
 
