@@ -221,7 +221,7 @@
         flex-direction: row;
         position: fixed;
         inset: 0 0 0 30%;
-        background-color:hsla(0, 2%, 10%, 0.308);
+        background-color:var(--bg-box);
         backdrop-filter: blur(2rem);
         z-index: 90;
         transform: translateX(100%);
@@ -234,7 +234,7 @@
 
     @supports(backdrop-filter: blur(2rem)){
         .main-header .header-wrapper .workpal-nav {
-            background-color:hsla(0, 2%, 10%, 0.308);
+            background-color:var(--bg-box);
             backdrop-filter: blur(2rem);
         }
         .toogle-nav .sr-auto{
@@ -256,7 +256,7 @@
         right: 4rem;
         top: 5rem;
         padding: .7rem;
-        color: var(--text-white);
+        color: var(--text-black);
         font-size: 3.6rem;
         background-color: transparent;
         border-radius: 999px;
@@ -273,8 +273,8 @@
     .workpal-nav .nav-link span{
         align-items: start;
         font-size: 2.4rem;
-        color: var(--text-white);
-        font-weight: 400;
+        color: var(--text-black);
+        font-weight: 500;
     }
 
 
