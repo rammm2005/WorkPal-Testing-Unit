@@ -42,7 +42,7 @@
             
 
             
-            <nav class="workpal-nav">
+            <nav class="workpal-nav" id="navigation-link" data-visible="false">
                 <ul>
                     <li class="nav-link">
                         <a href="" class="text-link">How to Work</a>
@@ -63,17 +63,18 @@
                         <a href="" class="text-link">Sign In</a>
                     </li>
                 </ul>
+
             </nav>
 
-            <div class="icons">
+            <div class="icons" id="toogleIcons">
             <button class="toogle-search-btn" id="toogle-search">
                 <i class='bx bx-search-alt-2'></i>
                 <i class='bx bx-x' id="x-search"></i>
             </button>
 
-            <div class="toogle-nav active" id="toogle-nav">
+            <div class="toogle-nav" id="toogle-nav" aria-expanded="false">
                 <i class='bx bxs-dashboard' ></i>
-                <i class='bx bx-x' id="x-nav"></i>
+                <i class='bx bx-x sr-auto' id="sr-x"></i>
             </div>
 
             <li class="nav-link">

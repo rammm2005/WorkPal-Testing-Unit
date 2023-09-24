@@ -62,6 +62,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background-color: var(--bg-light);
+    overflow-x:hidden ;
 }
 
 main {
@@ -199,7 +200,7 @@ main {
     transition: all ease .6s;
 }
 
-.header-wrapper .toogle-nav #x-nav{
+.header-wrapper .toogle-nav .sr-auto{
     display: none;
 }
 
@@ -241,6 +242,7 @@ main {
     cursor: pointer;
     transition: all ease .8s;
 }
+
 
 .nav-link span:hover,
 .nav-link .text-link:hover {

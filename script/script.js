@@ -20,8 +20,41 @@ $(document).ready(function () {
 
   // Navbar toogle Mobile
 
-  const toogleSearch = $("");
-  const toogleNav = $("");
+  const toogleSearch = $("#toogle-search");
+  const toogleNav = $("#toogle-nav");
+  const navLink = $("#navigation-link");
+  const closeNav = $("#sr-x");
+
+  toogleSearch.click(function(){
+    toogleSearch.addClass('active');
+    // toogleNav.removeClass('active'); 
+    
+  });
+
+  toogleNav.click(function(){
+    toogleNav.addClass('active');
+    if(toogleNav.hasClass('active')){
+      const visiblelity = navLink.attr("data-visible");
+      console.log(visiblelity);
+      if(visiblelity === "false"){
+        $(navLink).attr("data-visible", "true" );
+        $(toogleNav).attr("aria-expanded" ,"true");
+         $(closeNav).css("transfrom","translateX(0)");
+         
+      }else if(visiblelity === "true"){
+        $(navLink).attr("data-visible" , "false");
+        $(toogleNav).attr("aria-expanded" ,"false");
+        $(closeNav).css("transfrom","translateX(100%)");
+         toogleNav.removeClass('active'); 
+         
+      }
+    }else{
+        toogleNav.removeClass('active'); 
+    }
+  });
+
+
+
 
   // Image Freelance Efect
   $("#fadeImg>.freelance-img:gt(0)").hide();
