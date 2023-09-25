@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   const categoryMenu = $("#categoryMenu");
   const lengthScroll = $(window).width();
@@ -27,7 +26,6 @@ $(document).ready(function () {
 
   toogleSearch.click(function () {
     toogleSearch.addClass("active");
-    
   });
 
   toogleNav.click(function () {
@@ -198,17 +196,17 @@ $(document).ready(function () {
 
   // setInterval(slideNext, 3000);
 
-
-  // Show and hide login 
+  // Show and hide login
   const pwShowHide = $(".eye-icon");
   const forms = $(".left-content");
-  const links = $(".link");
+  const links = $(".swipe-login");
 
   pwShowHide.each(function () {
     const eyeIcon = $(this);
     eyeIcon.click(function () {
-      let pwFields = eyeIcon.closest(".left-content").find(".password #password");
-
+      let pwFields = eyeIcon
+        .closest(".left-content")
+        .find(".password #password");
 
       pwFields.each(function () {
         const password = $(this);
@@ -232,16 +230,19 @@ $(document).ready(function () {
   });
 
 
-  //login height fix 
 
-  const leftContentSign = $('.left-content').height();
-  const rightContentSign = $('right-content').height(leftContentSign);
+  //login height fix
+  function setRightContentHeight() {
+    const leftContentSign = $(".left-content").height();
+    $(".right-content").height(leftContentSign);
+  }
 
+  setRightContentHeight();
 
-
-
-
+  // call fun kalo window w nya change
+  $(window).resize(function () {
+    setRightContentHeight();
+  });
 
   // Modals Seting
-   
 });

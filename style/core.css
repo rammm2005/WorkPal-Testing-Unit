@@ -200,6 +200,44 @@ main {
     transition: all ease .6s;
 }
 
+.header-wrapper .wishlist{
+    font-size: 2.5rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.header-wrapper .wishlist a{
+    text-decoration: none;
+}
+
+.header-wrapper .wishlist i{
+    color: var(--text-black);
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    border-radius: 999px;
+    padding: .5rem;
+}
+
+.header-wrapper .cart{
+    font-size: 2.5rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.header-wrapper .cart a{
+    text-decoration: none;
+}
+
+.header-wrapper .cart i{
+    color: var(--text-black);
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    border-radius: 999px;
+    padding: .5rem;
+}
+
 .header-wrapper .toogle-nav .sr-auto{
     display: none;
 }

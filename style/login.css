@@ -31,11 +31,9 @@ body {
     position: relative;
     display: flex;
     max-width: 100%;
-    max-height: 100vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    /* top: 0;
-    bottom: 0; */
     padding: 2rem 7%;
 }
 
@@ -372,22 +370,23 @@ body {
 
 
 
-@import url(core.css);
-
-@media only screen and (max-width:1024px) {
-    html {
-        font-size: 55%;
-    }
-
-
-
-}
-
+/* mobile Sign */
 
 @media only screen and (max-width: 991px) {
     html {
         font-size: 55%;
     }
+
+    .sign-container{
+        padding: 2rem;
+        height: 100vh;
+    }
+
+    .sign-in .right-content .right-wrapper .img-bg{
+        background-position: right;
+    }
+
+
 
 
 }
