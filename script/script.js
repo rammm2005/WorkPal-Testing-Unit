@@ -197,11 +197,30 @@ $(document).ready(function () {
   // setInterval(slideNext, 3000);
 
   // Show and hide login
-  const pwShowHide = $(".eye-icon");
-  const forms = $(".left-content");
-  const links = $(".swipe-login");
+  const rPass = $("#eye-rpass");
+  const pass = $("#eye-pass");
 
-  pwShowHide.each(function () {
+  rPass.each(function () {
+    const eyeIcon = $(this);
+    eyeIcon.click(function () {
+      let pwFields = eyeIcon
+        .closest(".left-content")
+        .find(".password #rpass");
+
+      pwFields.each(function () {
+        const password = $(this);
+        if (password.attr("type") === "password") {
+          password.attr("type", "text");
+          eyeIcon.removeClass("bx-hide").addClass("bx-show");
+        } else {
+          password.attr("type", "password");
+          eyeIcon.removeClass("bx-show").addClass("bx-hide");
+        }
+      });
+    });
+  });
+
+   pass.each(function () {
     const eyeIcon = $(this);
     eyeIcon.click(function () {
       let pwFields = eyeIcon
@@ -221,27 +240,46 @@ $(document).ready(function () {
     });
   });
 
-  links.each(function () {
-    const link = $(this);
-    link.click(function (e) {
-      e.preventDefault();
-      forms.toggleClass("show-signup");
+  $(".sign-up").hide();
+
+  // regis
+    $(".link-form #swipe-sign-in").click(function() {
+        $(".sign-in").hide();
+        $(".sign-up").show();
     });
-  });
+
+    // login
+    $(".link-form #swipe-sign-up").click(function() {
+        $(".sign-up").hide();
+        $(".sign-in").show();
+    });
 
 
 
   //login height fix
-  function setRightContentHeight() {
-    const leftContentSign = $(".left-content").height();
-    $(".right-content").height(leftContentSign);
+  function setRightContentHeightLogin() {
+    const leftContentSignLogin = $("#sign-in-l").height();
+    $("#sign-in-r").height(leftContentSignLogin);
   }
 
-  setRightContentHeight();
+  function setRightContentHeightRegis(){
+    const leftContentSignRegis = $("#sign-up-l").height();
+    $("#sign-up-r").height(leftContentSignRegis);
+    // console.log(leftContentSignRegis);
+    // console.log($("#sign-up-r").width());
+
+  }
+
+
+  setRightContentHeightLogin();
+  setRightContentHeightRegis();
+
+
 
   // call fun kalo window w nya change
   $(window).resize(function () {
-    setRightContentHeight();
+    setRightContentHeightLogin();
+    setRightContentHeightRegis();
   });
 
   // Modals Seting
