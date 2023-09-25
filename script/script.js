@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   const categoryMenu = $("#categoryMenu");
   const lengthScroll = $(window).width();
@@ -17,7 +18,6 @@ $(document).ready(function () {
   $(window).on("scroll", toggleCategoryMenu);
   toggleCategoryMenu();
 
-
   // Navbar toogle Mobile
 
   const toogleSearch = $("#toogle-search");
@@ -25,37 +25,32 @@ $(document).ready(function () {
   const navLink = $("#navigation-link");
   const closeNav = $("#sr-x");
 
-  toogleSearch.click(function(){
-    toogleSearch.addClass('active');
-    // toogleNav.removeClass('active'); 
+  toogleSearch.click(function () {
+    toogleSearch.addClass("active");
     
   });
 
   toogleNav.click(function () {
-  $("body").toggleClass("active");
-  $(toogleNav).addClass("active");
+    $("body").toggleClass("active");
+    $(toogleNav).addClass("active");
 
-  if (toogleNav.hasClass('active')) {
-    const visiblelity = navLink.attr("data-visible");
-    console.log(visiblelity);
-    if (visiblelity === "false") {
-      $(navLink).attr("data-visible", "true");
-      $(toogleNav).attr("aria-expanded", "true");
-      $(closeNav).css("transform", "translateX(0)");
-    } else if (visiblelity === "true") {
-      $(navLink).attr("data-visible", "false");
-      $(toogleNav).attr("aria-expanded", "false");
-      $(closeNav).css("transform", "translateX(100%)");
-      toogleNav.removeClass('active');
+    if (toogleNav.hasClass("active")) {
+      const visiblelity = navLink.attr("data-visible");
+      console.log(visiblelity);
+      if (visiblelity === "false") {
+        $(navLink).attr("data-visible", "true");
+        $(toogleNav).attr("aria-expanded", "true");
+        $(closeNav).css("transform", "translateX(0)");
+      } else if (visiblelity === "true") {
+        $(navLink).attr("data-visible", "false");
+        $(toogleNav).attr("aria-expanded", "false");
+        $(closeNav).css("transform", "translateX(100%)");
+        toogleNav.removeClass("active");
+      }
+    } else {
+      $("body").removeClass("active");
     }
-  } else {
-    $("body").removeClass("active"); 
-  }
-});
-
-
-
-
+  });
 
   // Image Freelance Efect
   $("#fadeImg>.freelance-img:gt(0)").hide();
@@ -126,7 +121,7 @@ $(document).ready(function () {
   });
 
   // Easing Smooth
-    let calcScrollValue = () => {
+  let calcScrollValue = () => {
     let scrollProgress = $("#to-top");
     let progressValue = $(".top-link");
     let topScroll = $(document).scrollTop();
@@ -150,7 +145,6 @@ $(document).ready(function () {
   };
   $(window).scroll(calcScrollValue);
   $(document).ready(calcScrollValue);
-  
 
   // Popular Slide
   const slidemain = $("#slider-popular");
@@ -194,13 +188,60 @@ $(document).ready(function () {
       itemsToShow = 2;
     } else if ($(window).width() <= 450) {
       itemsToShow = 1;
-    } else if($(window).width() <= 1180){
+    } else if ($(window).width() <= 1180) {
       itemsToShow = 3;
-    }else{
-      itemsToShow =  4;
+    } else {
+      itemsToShow = 4;
     }
     showItems(currentIndex); // items perwindow berubah
   });
 
   // setInterval(slideNext, 3000);
+
+
+  // Show and hide login 
+  const pwShowHide = $(".eye-icon");
+  const forms = $(".left-content");
+  const links = $(".link");
+
+  pwShowHide.each(function () {
+    const eyeIcon = $(this);
+    eyeIcon.click(function () {
+      let pwFields = eyeIcon.closest(".left-content").find(".password #password");
+
+
+      pwFields.each(function () {
+        const password = $(this);
+        if (password.attr("type") === "password") {
+          password.attr("type", "text");
+          eyeIcon.removeClass("bx-hide").addClass("bx-show");
+        } else {
+          password.attr("type", "password");
+          eyeIcon.removeClass("bx-show").addClass("bx-hide");
+        }
+      });
+    });
+  });
+
+  links.each(function () {
+    const link = $(this);
+    link.click(function (e) {
+      e.preventDefault();
+      forms.toggleClass("show-signup");
+    });
+  });
+
+
+  //login height fix 
+
+  const leftContentSign = $('.left-content').height();
+  const rightContentSign = $('right-content').height(leftContentSign);
+
+
+
+
+
+
+  // Modals Seting
+   
 });

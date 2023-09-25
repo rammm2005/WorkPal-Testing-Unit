@@ -1,0 +1,448 @@
+
+:root{
+    --bg-box: #fff;
+    --text-black:#000;
+
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    background-color: hsl(0, 21%, 92%) !important;
+}
+
+
+
+.sign-container{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* top: 0;
+    bottom: 0; */
+    padding: 2rem 7%;
+}
+
+.sign-container .sign-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-container .sign-wrapper .sign-in{
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-container .sign-wrapper .sign-in .left-content{
+    left: auto;
+    width:40%;
+    max-height:100vh; 
+    border-right: 4px solid green;
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+
+.sign-in .left-content .title-login{
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.sign-in .left-content .form-login{
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    position: relative;
+    align-items: center;
+    z-index: 2;
+    padding: 2rem 0rem 1rem 0rem;
+}
+.sign-in .left-content .form-login .input-login{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.sign-in .left-content .form-login .input-login .label-login-input{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-black);
+    margin-bottom: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in .left-content .form-login .input-login .label-login-input b{
+    color: red;
+}
+
+.sign-in .left-content .form-login .input-login input{
+    outline: none;
+    border: none;
+    padding: 1.1rem 1.3rem 1.1rem 1.3rem;
+    width: 100%;
+}
+
+.sign-in .left-content .form-login .input-login input:focus{
+    outline: none;
+}
+
+
+.sign-in .left-content .form-login .input-login .eye-icon{
+    position: relative;
+    border-left: 1px solid #aaa6a6;
+    /* top: 15rem;
+    right: 4rem; */
+    width: 10%;
+    align-items: center;
+
+    /* transform: translateY(-50%); */
+    font-size: 1.8rem;
+    color: #c6c1c1;
+    cursor: pointer;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.sign-in .left-content .form-login .input-login .password,
+.sign-in .left-content .form-login .input-login .email{
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(246, 246, 246);
+    border:1px solid hsl(0, 15%, 90%) ;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sign-in .left-content .form-login .btn-submit{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0rem 1rem 0rem;
+    outline: none;
+    background-color: #eee7e7;
+    border: 2px solid hsl(240, 79%, 43%);
+    border-radius: 5rem;
+    padding: .8rem 2.5rem .8rem 2.5rem;
+    color: rgb(21, 21, 221);
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all ease .7s;
+}
+
+.sign-in .left-content .form-login .btn-submit:hover{
+    background-color: rgb(21, 21, 221);
+    color: white;
+}
+
+.sign-in .left-content .form-login .link-form{
+    margin: .5rem 0rem .5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 400;
+    gap: 2px;
+    color: var(--text-black);
+}
+
+.sign-in .left-content .form-login .link-form a{
+    text-decoration: none;
+    font-weight: 400;
+    color: hwb(127 15% 36%);
+    font-weight: 500;
+}
+
+
+.sign-in .left-content .form-login .line::before{
+    content: 'Or';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+.sign-in .left-content .form-login .footer-login{
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;    
+    width: 100%;
+    align-items: center;
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-google,
+.sign-in .left-content .form-login .footer-login .login-via-facebook,
+.sign-in .left-content .form-login .footer-login .login-via-github,
+.sign-in .left-content .form-login .footer-login .join-us{
+    position: relative;
+    display: flex;
+    background-color: var(--bg-box);
+    width: 80%;
+    gap: 3rem;
+    outline: none;
+    border: none;
+    margin-bottom: .8rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    transition: all ease .7s;
+}
+
+
+.sign-in .left-content .form-login .footer-login .login-via-google img,
+.sign-in .left-content .form-login .footer-login .login-via-facebook img,
+.sign-in .left-content .form-login .footer-login .login-via-github img{
+    max-width: 2rem;
+    border-radius: 999px;
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-google{
+    background-color: white;
+    border: 1px solid hsl(0, 15%, 85%);
+    align-items: center;
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-google:hover{
+    background-color: rgb(250, 240, 240);
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-github:hover{
+    background-color: rgb(250, 240, 240);
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-facebook:hover{
+    background-color: hsl(255, 65%, 45%);
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-google span{
+    font-size: 1.5rem;
+    color: var(--text-black);
+    font-weight: 400;
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-facebook{
+    background-color: hwb(240 22% 11%);
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-facebook span{
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-github{
+    background-color: #ffffff;
+    border:1px solid hsl(0, 15%, 85%);
+
+}
+
+.sign-in .left-content .form-login .footer-login .login-via-github span{
+    color: var(--text-black);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.sign-in .left-content .form-login .footer-login .join-us{
+    background-color: hsl(120, 71%, 40%);
+
+}
+
+.sign-in .left-content .form-login .footer-login .join-us i{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.sign-in .left-content .form-login .footer-login .join-us a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.sign-in .right-content {
+    width: 40%;
+    display: flex;
+    max-height: 100vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; 
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.sign-in .right-content .right-wrapper {
+    max-width: 100%;
+    /* padding: 2rem 0rem 1rem 0rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sign-in .right-content .right-wrapper .img-bg {
+    width: 100%;
+    object-fit: cover;
+    width: fit-content;
+    object-position: bottom !important;
+    background-position: bottom;
+    z-index: 1;
+}
+
+.sign-in .right-content .right-wrapper .text-right{
+    position: absolute;
+    color: var(--text-black);
+    top: 3rem;
+    left: 3rem;
+    z-index: 4;
+    flex: 1 0 100%;
+    flex-direction: column;
+}
+
+.sign-in .right-content .right-wrapper .text-right h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+.sign-in .right-content .right-wrapper .text-right p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #35ab35;
+}
+
+
+
+@import url(core.css);
+
+@media only screen and (max-width:1024px) {
+    html {
+        font-size: 55%;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+
+    .sign-container{
+        padding: 2rem ;
+        height: 100vh;
+    }
+    .sign-container .sign-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign-container .sign-wrapper .sign-in{
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .sign-container .sign-wrapper .sign-in .left-content{
+        width: 100%;
+    }
+    .sign-container .sign-wrapper .sign-in .right-content{
+        display: none;
+    }
+    
+}
+
+
+@media (max-width:450px) {
+    html {
+        font-size: 40%;
+    }
+
+    .sign-container{
+        padding: 1rem;
+        height: 100vh;
+    }
+    .sign-container .sign-wrapper .sign-in{
+        width: 90%;
+    }
+    .sign-container .sign-wrapper .sign-in .right-content{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
