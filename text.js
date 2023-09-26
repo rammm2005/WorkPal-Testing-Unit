@@ -293,3 +293,38 @@ const wrapper = $("#carousel");
 
     // Initialize slider
     initSlider();
+
+
+
+
+
+
+
+
+// $(".link-form #swipe-sign-in").click(function() {
+//         $(".sign-in").hide();
+//         $(".sign-up").show();
+//     });
+
+//     // login
+//     $(".link-form #swipe-sign-up").click(function() {
+//         $(".sign-up").hide();
+//         $(".sign-in").show();
+//     });
+
+
+
+//   //login height fix
+//   function setRightContentHeightLogin() {
+//     const leftContentSignLogin = $("#sign-in-l").height();
+//     $("#sign-in-r").height(leftContentSignLogin);
+//   }
+
+//   function setRightContentHeightRegis(){
+//     const leftContentSignRegis = $("#sign-up-l").height();
+//     $("#sign-up-r").height(leftContentSignRegis);
+//   }
+
+
+//   setRightContentHeightLogin();
+//   setRightContentHeightRegis();

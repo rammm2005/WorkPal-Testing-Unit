@@ -240,47 +240,45 @@ $(document).ready(function () {
     });
   });
 
-  $(".sign-up").hide();
 
-  // regis
-    $(".link-form #swipe-sign-in").click(function() {
+
+  $(".sign-up").hide();
+  
+    // Regis
+    const signInLink = $(".link-form #swipe-sign-in");
+    const signUpLink = $(".link-form #swipe-sign-up");
+
+    signInLink.click(function () {
         $(".sign-in").hide();
         $(".sign-up").show();
+        setRightContentHeightRegis();
     });
 
-    // login
-    $(".link-form #swipe-sign-up").click(function() {
+    signUpLink.click(function () {
         $(".sign-up").hide();
         $(".sign-in").show();
+        setRightContentHeightLogin();
     });
 
+    function setRightContentHeightRegis() {
+        const leftContentSignRegis = $("#sign-up-l").height();
+        $("#sign-up-r").height(leftContentSignRegis);
+    }
 
+    function setRightContentHeightLogin() {
+        const leftContentSignLogin = $("#sign-in-l").height();
+        $("#sign-in-r").height(leftContentSignLogin);
+    }
 
-  //login height fix
-  function setRightContentHeightLogin() {
-    const leftContentSignLogin = $("#sign-in-l").height();
-    $("#sign-in-r").height(leftContentSignLogin);
-  }
-
-  function setRightContentHeightRegis(){
-    const leftContentSignRegis = $("#sign-up-l").height();
-    $("#sign-up-r").height(leftContentSignRegis);
-    // console.log(leftContentSignRegis);
-    // console.log($("#sign-up-r").width());
-
-  }
-
-
-  setRightContentHeightLogin();
-  setRightContentHeightRegis();
-
-
-
-  // call fun kalo window w nya change
-  $(window).resize(function () {
-    setRightContentHeightLogin();
     setRightContentHeightRegis();
-  });
+    setRightContentHeightLogin();
+
+    $(window).resize(function () {
+        setRightContentHeightLogin();
+        setRightContentHeightRegis();
+    });
 
   // Modals Seting
 });
+
+
