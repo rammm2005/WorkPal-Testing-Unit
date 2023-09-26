@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Modal Box</title>
+    <link rel="stylesheet" href="style/modals.css" />
+    <link rel="stylesheet" href="plugins/boxicons-2.0.7/css/boxicons.css">
+
+</head>
+
+<body>
+
+    <button class="show-modal" id="lunch-modal" data-modal-target="modals-search">lunch modal</button>
+    <button class="show-modal" id="lunch-modal" data-modal-target="modals-another">modal lain</button>
+
+
+
+    <section class="modal-container" id="modals-search">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <p>Test Bangke</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-close">Ok, Close</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-container" id="modals-another">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <p>Another Modal hahahah</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-close">Ok, Close</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="plugins/jquery v3.6.0/jquery.js"></script>
+
+    <script>
+        $(".show-modal").click(function () {
+            const targetModal = $(this).attr("data-modal-target");
+            $("#" + targetModal).addClass("active");
+            $("body").addClass("active");
+        });
+
+        $(".close-btn").click(function () {
+            const modal = $(this).closest(".modal-container");
+            modal.removeClass("active");
+            $("body").removeClass("active");
+        });
+
+       $(window).scroll(function(){
+            $(".modal-container").removeClass("active");
+            $("body").removeClass("active");
+       });
+
+        // $("body").click(function (event) {
+        //     if ($(event.target).hasClass("modal-container")) {
+        //         $(".modal-container.active").removeClass("active");
+        //         $("body").removeClass("active");
+        //     }
+        // });
+    </script>
+
+</body>
+
+</html>

@@ -135,3 +135,74 @@ $(document).ready(function() {
     color: var(--scroller-tumb);
     transition: all ease .8s;
 } 
+
+
+
+<div class="result-search-box">
+                        <ul>
+                            <li class="content-result-search">
+                                Freelancer Web Design
+                            </li>
+                            <li class="content-result-search">
+                                Best Freelancer for Logo Maker
+                            </li>
+                            <li class="content-result-search">
+                                Cheaper Freelance
+                            </li>
+                            <li class="content-result-search">
+                                Freelancer with best Rating
+                            </li>
+                            <li class="content-result-search">
+                                SEO for Website Enggine
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+.main-header .header-wrapper .search-header .search-form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 100%;
+}
+
+.search-header .search-form .search-input {
+    outline: none;
+    border: none;
+    background: var(--bg-gray);
+    padding: 1.5rem;
+    box-shadow: 1px 0px 0px 1px #0000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid hsl(0, 6%, 93%);
+    width: 25em;
+}
+
+.search-input::placeholder {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    text-transform: capitalize;
+    font-weight: 550;
+}
+
+.search-header .search-form .search-icon-label {
+    padding: 1.2rem;
+    background-color: var(--scroller-tumb);
+    text-align: center;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    transition: all ease .8s;
+}
+
+.search-header .search-form .search-icon-label i {
+    font-size: 1rem;
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+.search-header .search-form .search-icon-label:hover {
+    background-color: var(--bg-lime-green);
+}

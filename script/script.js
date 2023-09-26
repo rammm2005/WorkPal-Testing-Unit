@@ -194,8 +194,6 @@ $(document).ready(function () {
     showItems(currentIndex); // items perwindow berubah
   });
 
-  // setInterval(slideNext, 3000);
-
   // Show and hide login
   const rPass = $("#eye-rpass");
   const pass = $("#eye-pass");
@@ -203,9 +201,7 @@ $(document).ready(function () {
   rPass.each(function () {
     const eyeIcon = $(this);
     eyeIcon.click(function () {
-      let pwFields = eyeIcon
-        .closest(".left-content")
-        .find(".password #rpass");
+      let pwFields = eyeIcon.closest(".left-content").find(".password #rpass");
 
       pwFields.each(function () {
         const password = $(this);
@@ -220,7 +216,7 @@ $(document).ready(function () {
     });
   });
 
-   pass.each(function () {
+  pass.each(function () {
     const eyeIcon = $(this);
     eyeIcon.click(function () {
       let pwFields = eyeIcon
@@ -240,45 +236,105 @@ $(document).ready(function () {
     });
   });
 
-
-
   $(".sign-up").hide();
-  
-    // Regis
-    const signInLink = $(".link-form #swipe-sign-in");
-    const signUpLink = $(".link-form #swipe-sign-up");
 
-    signInLink.click(function () {
-        $(".sign-in").hide();
-        $(".sign-up").show();
-        setRightContentHeightRegis();
-    });
+  // Regis
+  const signInLink = $(".link-form #swipe-sign-in");
+  const signUpLink = $(".link-form #swipe-sign-up");
 
-    signUpLink.click(function () {
-        $(".sign-up").hide();
-        $(".sign-in").show();
-        setRightContentHeightLogin();
-    });
-
-    function setRightContentHeightRegis() {
-        const leftContentSignRegis = $("#sign-up-l").height();
-        $("#sign-up-r").height(leftContentSignRegis);
-    }
-
-    function setRightContentHeightLogin() {
-        const leftContentSignLogin = $("#sign-in-l").height();
-        $("#sign-in-r").height(leftContentSignLogin);
-    }
-
+  signInLink.click(function () {
+    $(".sign-in").hide();
+    $(".sign-up").show();
     setRightContentHeightRegis();
-    setRightContentHeightLogin();
+  });
 
-    $(window).resize(function () {
-        setRightContentHeightLogin();
-        setRightContentHeightRegis();
-    });
+  signUpLink.click(function () {
+    $(".sign-up").hide();
+    $(".sign-in").show();
+    setRightContentHeightLogin();
+  });
+
+  function setRightContentHeightRegis() {
+    const leftContentSignRegis = $("#sign-up-l").height();
+    $("#sign-up-r").height(leftContentSignRegis);
+  }
+
+  function setRightContentHeightLogin() {
+    const leftContentSignLogin = $("#sign-in-l").height();
+    $("#sign-in-r").height(leftContentSignLogin);
+  }
+
+  setRightContentHeightRegis();
+  setRightContentHeightLogin();
+
+  $(window).resize(function () {
+    setRightContentHeightLogin();
+    setRightContentHeightRegis();
+  });
 
   // Modals Seting
+  $(".modal-container").hide();
+  $(".modal-show").click(function () {
+    const targetModal = $(this).attr("data-modal-target");
+    $("#" + targetModal).addClass("active");
+    $(".modal-container").show();
+    $("body").addClass("active");
+  });
+
+  $(".close-btn").click(function () {
+    const modal = $(this).closest(".modal-container");
+    modal.removeClass("active");
+    $(".modal-container").hide();
+    $("body").removeClass("active");
+  });
+
+  $(window).scroll(function () {
+    $(".modal-container").removeClass("active");
+    $(".modal-container").hide();
+    $("body").removeClass("active");
+  });
+
+  //  Search auto complate
+  $("#search").on("input", function () {
+    let inputVal = $(this).val().toLowerCase();
+    if (inputVal === "") {
+      $(".result-search-box").hide();
+      $(".not-found").hide(); 
+    } else {
+      $(".result-search-box").show();
+    }
+
+    let found = false; 
+
+    // filter
+    $(".content-result-search").each(function () {
+      if ($(this).text().toLowerCase().indexOf(inputVal) > -1) {
+        $(this).show();
+        found = true; 
+      } else {
+        $(this).hide();
+      }
+    });
+
+    // not found
+    if (!found) {
+      $(".not-found").show();
+    } else {
+      $(".not-found").hide();
+    }
+  });
+
+  // 1 dari search di click
+  $(".content-result-search").click(function () {
+    let selectedText = $(this).text();
+    $("#search").val(selectedText);
+    $(".result-search-box").hide();
+  });
+
+  // keluarkan search di click
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".search-container").length) {
+      $(".result-search-box").hide();
+    }
+  });
 });
-
-

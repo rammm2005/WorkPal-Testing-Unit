@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/core.css">
     <link rel="stylesheet" href="style/mobile.css">
     <link rel="stylesheet" href="plugins/boxicons-2.0.7/css/boxicons.css">
+    <link rel="stylesheet" href="style/modals.css">
     <title>WorkPal</title>
 </head>
 
@@ -28,20 +29,9 @@
                 </span>
             </div>
 
-            <div class="search-header">
-                <form type="" class="search-form">
-                    <input type="search" name="search" id="searchInput" placeholder="Find your service for today"
-                        class="search-input">
-                    <button type="button" class="search-icon-label"><i class='bx bx-search-alt-2 bx-md'></i></button>
-                </form>
-
-                
-            </div>
 
 
-            
 
-            
             <nav class="workpal-nav" id="navigation-link" data-visible="false">
                 <ul>
                     <li class="nav-link">
@@ -67,28 +57,30 @@
             </nav>
 
             <div class="icons" id="toogleIcons">
-            <button class="toogle-search-btn" id="toogle-search">
-                <i class='bx bx-search-alt-2'></i>
-                <i class='bx bx-x' id="x-search"></i>
-            </button>
 
-            <div class="toogle-nav" id="toogle-nav" aria-expanded="false">
-                <i class='bx bxs-dashboard' ></i>
-                <i class='bx bx-x sr-auto' id="sr-x"></i>
+                <button class="toogle-search-btn modal-show" id="toogle-search" data-modal-target="modals-search">
+                    <i class='bx bx-search-alt-2'></i>
+                    <i class='bx bx-x' id="x-search"></i>
+                </button>
+
+                <div class="wishlist">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="cart">
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+
+
+                <div class="toogle-nav" id="toogle-nav" aria-expanded="false">
+                    <i class='bx bxs-dashboard'></i>
+                    <i class='bx bx-x sr-auto' id="sr-x"></i>
+                </div>
+
+                <li class="nav-link">
+                    <button class="btn-sign-up"><a href="page/login.html">Sign Up</a></button>
+                </li>
             </div>
-
-            <div class="wishlist">
-                <a href=""><i class='bx bx-heart' ></i></a>
-            </div>
-
-            <div class="cart">
-                <a href=""><i class='bx bx-cart' ></i></a>
-            </div>
-
-            <li class="nav-link">
-                <button class="btn-sign-up"><a href="page/login.html">Sign Up</a></button>
-            </li>
-        </div>
         </div>
 
         <!-- Category Menu -->
@@ -134,7 +126,7 @@
                     </li>
 
                 </ul>
-                
+
                 <div class="next" id="nextNav">
                     <i class='bx bxs-chevron-right'></i>
                 </div>
@@ -146,7 +138,7 @@
     <!-- End Header -->
 
 
-   
+
 
 
 
@@ -224,78 +216,85 @@
 
 
 
-                <div class="popular-service" >
+                <div class="popular-service">
                     <div class="popular-text">
                         <span>Beautiful Website UI</span>
                         <h2>Web Design & Developer</h2>
                     </div>
-                    <a href="#" class="popular-link"> <img src="resource/image/popular/web.jpeg" alt="Web" class="popular-img"></a>
+                    <a href="#" class="popular-link"> <img src="resource/image/popular/web.jpeg" alt="Web"
+                            class="popular-img"></a>
                     <div class="popular-rating">
                         <p>5</p><i class='bx bxs-star'></i>
                     </div>
                 </div>
 
-                <div class="popular-service" >
+                <div class="popular-service">
                     <div class="popular-text">
                         <span>Growth With Great Apps</span>
                         <h2>App Developer</h2>
                     </div>
-                    <a href="#" class="popular-link"><img src="resource/image/popular/app.png" alt="App" class="popular-img"></a>
+                    <a href="#" class="popular-link"><img src="resource/image/popular/app.png" alt="App"
+                            class="popular-img"></a>
                     <div class="popular-rating">
                         <p>5</p><i class='bx bxs-star'></i>
                     </div>
                 </div>
 
-                <div class="popular-service" >
+                <div class="popular-service">
                     <div class="popular-text">
                         <span>One Click Change the World</span>
                         <h2>WordPrees</h2>
                     </div>
-                    <a href="#" class="popular-link"><img src="resource/image/popular/wordpress.png" alt="Wordprees" class="popular-img"></a>
+                    <a href="#" class="popular-link"><img src="resource/image/popular/wordpress.png" alt="Wordprees"
+                            class="popular-img"></a>
                     <div class="popular-rating">
                         <p>4.3</p><i class='bx bxs-star'></i>
                     </div>
                 </div>
 
-                <div class="popular-service" >
+                <div class="popular-service">
                     <div class="popular-text">
                         <span>Build your Brand</span>
                         <h2>Logo Maker</h2>
                     </div>
-                    <a href="#" class="popular-link"><img src="resource/image/popular/logo.jpeg" alt="Logo Maker" class="popular-img"></a>
+                    <a href="#" class="popular-link"><img src="resource/image/popular/logo.jpeg" alt="Logo Maker"
+                            class="popular-img"></a>
                     <div class="popular-rating">
                         <p>4.6</p><i class='bx bxs-star'></i>
                     </div>
                 </div>
 
-                <div class="popular-service" >
+                <div class="popular-service">
                     <div class="popular-text">
                         <span>New Virtual World</span>
                         <h2>Anime Maker</h2>
                     </div>
-                    <a href="#" class="popular-link"><img src="resource/image/popular/anime.png" alt="Anime" class="popular-img"></a>
+                    <a href="#" class="popular-link"><img src="resource/image/popular/anime.png" alt="Anime"
+                            class="popular-img"></a>
                     <div class="popular-rating">
                         <p>5</p><i class='bx bxs-star'></i>
                     </div>
                 </div>
 
-                <div class="popular-service" >
+                <div class="popular-service">
                     <div class="popular-text">
                         <span>Make AI Evolve</span>
                         <h2>AI Service</h2>
                     </div>
-                    <a href="#" class="popular-link"><img src="resource/image/popular/AI.png" alt="AI" class="popular-img"></a>
+                    <a href="#" class="popular-link"><img src="resource/image/popular/AI.png" alt="AI"
+                            class="popular-img"></a>
                     <div class="popular-rating">
                         <p>4.8</p><i class='bx bxs-star'></i>
                     </div>
                 </div>
 
-                <div class="popular-service" >
+                <div class="popular-service">
                     <div class="popular-text">
                         <span>Unlock Growth Online</span>
                         <h2>SEO</h2>
                     </div>
-                    <a href="#" class="popular-link"><img src="resource/image/popular/seo.png" alt="SEO" class="popular-img"></a>
+                    <a href="#" class="popular-link"><img src="resource/image/popular/seo.png" alt="SEO"
+                            class="popular-img"></a>
                     <div class="popular-rating">
                         <p>4.5</p><i class='bx bxs-star'></i>
                     </div>
@@ -731,24 +730,68 @@
 
     <!-- Modals -->
 
-    <div id="modalDialog" class="modal">
-        <div class="modal-content animate-top">
+    <section class="modal-container" id="modals-search">
+        <div class="modal-box">
             <div class="modal-header">
-                <button type="button" class="close">
-                    <span aria-hidden="true">x</span>
-                </button>
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
             </div>
-            <div class="modal-body">
-                <p>Woohoo, you're reading this text in a modal!</p>
-                <p>Modal body content goes here...</p>
-            </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-secondary close">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
-        </div>
-    </div>
 
+            <div class="modal-content">
+                <div class="search-container">
+                    <form action="#" method="#" class="search-form">
+                        <input type="search" name="search" id="search"
+                            placeholder="What Freelance service are you looking for now..." autocomplete="off"
+                            class="search-input">
+                        <button class="search-btn"><i class='bx bx-search'></i></button>
+                    </form>
+
+                    <div class="result-search-box">
+                        <ul>
+                            <li class="content-result-search">
+                                Freelancer Web Design
+                            </li>
+                            <li class="content-result-search">
+                                Best Freelancer for Logo Maker
+                            </li>
+                            <li class="content-result-search">
+                                Cheaper Freelance
+                            </li>
+                            <li class="content-result-search">
+                                Freelancer with best Rating
+                            </li>
+                            <li class="content-result-search">
+                                SEO for Website Enggine
+                            </li>
+                            <li class="content-result-search">
+                                How to fix Ai bugs
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="not-found">Result Not Found</p>
+
+                    <div class="history-search">
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                          <p>  Ai Maker with Python</p>
+                        </div>
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p>Profesional Photografer</p>
+                        </div>
+
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p>Developer Eccommers Apps</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- End Home Section -->

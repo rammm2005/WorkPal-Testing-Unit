@@ -1,0 +1,130 @@
+@import url(login.css);
+
+body.active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5); 
+    pointer-events: auto;
+}
+
+.modal-container{
+    display: none;
+    position: relative;
+    max-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    opacity:0 ;
+    z-index: 3;
+    transform: translateY(-2%) scale(1.2);
+    pointer-events: auto;
+}
+
+.modal-container.active{
+    display: flex;
+    position:absolute;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 999;
+    transform: translateY(0%) scale(1);
+    pointer-events: auto;
+    transition: transform 500ms ease-in-out;
+
+}
+
+.modal-container.active .modal-box{
+    width: 50%;
+    opacity: 1;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    z-index: 999;
+    transform: translate(0) scale(1);
+
+}
+
+.modal-container .modal-box .modal-header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.modal-container .modal-box .modal-header .close-btn{
+    position: absolute;
+    z-index: 2;
+    right: 3rem;
+    top:1rem;
+    cursor: pointer;
+}
+
+.modal-container .modal-box .modal-header .close-btn i{
+    font-size: 2.5rem;
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    padding: .8rem;
+    border-radius: 50%;
+    z-index: 3;
+    transition: all ease .7s;
+}
+
+.modal-container .modal-box .modal-header .close-btn i:hover{
+    background-color: hsla(0, 100%, 99%, 0.844);
+}
+
+
+.modal-container .modal-box .modal-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    padding: 2rem;
+}
+
+
+.modal-container .modal-box .modal-footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.modal-container .modal-box .modal-footer .btn-close{
+    outline: none;
+    border: none;
+    background-color: hsl(180, 57%, 61%);
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: .7rem;
+    color:white;
+    cursor: pointer;
+}
