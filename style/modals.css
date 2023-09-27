@@ -120,6 +120,24 @@
 
 
 
+@media only screen and (max-width:1024px){
+
+    .modal-container.active .modal-box{
+        width: 90%;
+        max-height: 100vh;
+    }
+
+}
+
+
+@media(max-width:991px){
+    .modal-container.active .modal-box{
+        width: 90%;
+        max-height: 100vh;
+    }
+}
+
+
 
 
 @media(max-width:768px){
@@ -130,7 +148,7 @@
 }
 
 @media(max-width:450px){
-    
+
     .modal-container.active .modal-box{
         width: 85%;
         max-height: 100vh;
