@@ -27,6 +27,25 @@ body {
 
 
 /* Login */
+
+.header-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    border-radius: 5rem;
+}
+
+.header-login img{
+    max-width: 15rem;
+    cursor: pointer;
+}
+
 .sign-container{
     position: relative;
     display: flex;
@@ -34,7 +53,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 2rem 7%;
+    padding: 0rem 7%;
 }
 
 .sign-container .sign-wrapper{
@@ -702,6 +721,14 @@ body {
 
 /* mobile Sign */
 
+@media only screen and (max-width:1024px) {
+.sign-container{
+    height: auto;
+    padding: 2rem;
+}
+
+}
+
 @media only screen and (max-width: 991px) {
     html {
         font-size: 55%;
@@ -709,7 +736,7 @@ body {
 
     .sign-container{
         padding: 2rem;
-        height: 100vh;
+        height: auto;
     }
 
     .sign-in .right-content .right-wrapper .img-bg{
@@ -731,7 +758,7 @@ body {
 
     .sign-container{
         padding: 2rem ;
-        height: 100vh;
+        height: 20vh;
     }
     .sign-container .sign-wrapper {
         display: flex;
@@ -772,7 +799,7 @@ body {
 
     .sign-container{
         padding: 1rem;
-        height: 100vh;
+        height: auto;
     }
     .sign-container .sign-wrapper .sign-in{
         width: 90%;
