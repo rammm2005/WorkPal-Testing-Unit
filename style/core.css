@@ -66,6 +66,19 @@ body {
     overflow-x: hidden;
 }
 
+body.active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+    pointer-events: none;
+  }
+
+
 main {
     padding: 2rem 7%;
 }
@@ -82,7 +95,7 @@ main {
     right: 0;
     display: block;
     background-color: var(--bg-white);
-    z-index: 999;
+    z-index: 997;
 }
 
 .main-header .header-wrapper {
@@ -143,17 +156,22 @@ input[type="search"]::-webkit-search-clear-button {
 
 .search-form .search-input {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1.7rem;
     border: none;
     border-bottom: 2px solid #ccc;
     outline: none;
 }
 
+.search-form .search-input::placeholder{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 .search-container .not-found {
     display: none;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     padding: 1rem;
     font-weight: 500;
 }
@@ -161,10 +179,11 @@ input[type="search"]::-webkit-search-clear-button {
 .search-form .search-btn {
     background-color: transparent;
     border: none;
-    right: 1rem;
+    right: 0;
     position: absolute;
     outline: none;
     cursor: pointer;
+    width:5%;
 }
 
 .search-btn i {
@@ -185,6 +204,23 @@ input[type="search"]::-webkit-search-clear-button {
     z-index: 10;
 }
 
+
+.result-search-box::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.result-search-box::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.result-search-box::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 0%, 0.694);
+    border-radius: 5rem;
+}
+
+
+
+
 .result-search-box ul {
     list-style: none;
     padding: 0;
@@ -192,13 +228,31 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 .result-search-box ul .content-result-search {
+    display: flex;
+    flex-direction: row;
     padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 400;
     color: var(--text-black);
     cursor: pointer;
     transition: background-color 0.5s;
     z-index: 4;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.result-search-box ul .content-result-search .btn-popular{
+    position: relative;
+    right: 0;
+    font-size: 1.6rem;
+    background-color: var(--bg-lime-green);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-white);
+    border-radius: 5rem;
+    font-weight: 600;
+    padding: .5rem .7rem .5rem .7rem;
 }
 
 .result-search-box ul .content-result-search:hover {
@@ -207,6 +261,7 @@ input[type="search"]::-webkit-search-clear-button {
 
 
 .search-container .history-search{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

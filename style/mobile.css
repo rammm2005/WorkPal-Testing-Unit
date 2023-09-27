@@ -198,18 +198,7 @@
 
 @media(max-width:768px) {
 
-    body.active::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); 
-        z-index: 999;
-        pointer-events: none;
-      }
-
+    
     /* Header */
     main {
         padding: 2rem 6%;
@@ -468,6 +457,28 @@
         max-width: 12rem;
     }
 
+
+    /* Search Pop Up */
+
+    .search-container .history-search{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+   .search-container .history-search .history p{
+    font-size: 1.6rem;
+   }
+
+   
+
+    .search-container .history-search .history{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3px;
+    }
 }
 
 
@@ -476,6 +487,16 @@
         font-size: 40%;
     }
 
+    .search-form .search-input{
+        width: 100%;
+
+    }
+
+    .search-btn i {
+        display: none;
+    }
+
+    
 
     /* Icons Header  toogle*/
     .header-wrapper .icons {

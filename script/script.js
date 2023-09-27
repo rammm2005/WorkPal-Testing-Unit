@@ -39,10 +39,14 @@ $(document).ready(function () {
         $(navLink).attr("data-visible", "true");
         $(toogleNav).attr("aria-expanded", "true");
         $(closeNav).css("transform", "translateX(0)");
+        $(closeNav).css("z-index" , "999");
+        $("body").toggleClass("active").css("z-index","999");
       } else if (visiblelity === "true") {
         $(navLink).attr("data-visible", "false");
         $(toogleNav).attr("aria-expanded", "false");
         $(closeNav).css("transform", "translateX(100%)");
+        $(closeNav).css("z-index" , "998");
+        $("body").removeClass("active").css("z-index","999");
         toogleNav.removeClass("active");
       }
     } else {
@@ -292,6 +296,10 @@ $(document).ready(function () {
     $(".modal-container").removeClass("active");
     $(".modal-container").hide();
     $("body").removeClass("active");
+    $(navLink).attr("data-visible", "false");
+    $(toogleNav).attr("aria-expanded", "false");
+    $(closeNav).css("transform", "translateX(100%)");
+    toogleNav.removeClass("active");
   });
 
   //  Search auto complate
@@ -327,8 +335,11 @@ $(document).ready(function () {
   // 1 dari search di click
   $(".content-result-search").click(function () {
     let selectedText = $(this).text();
+     selectedText = selectedText.trim();
     $("#search").val(selectedText);
     $(".result-search-box").hide();
+
+    $(this).text("");
   });
 
   // keluarkan search di click
@@ -337,4 +348,5 @@ $(document).ready(function () {
       $(".result-search-box").hide();
     }
   });
+
 });
