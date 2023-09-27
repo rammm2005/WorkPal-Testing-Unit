@@ -282,6 +282,7 @@ $(document).ready(function () {
     const targetModal = $(this).attr("data-modal-target");
     $("#" + targetModal).addClass("active");
     $(".modal-container").show();
+    $(".modal-container").css("display","flex");
     $("body").addClass("active");
   });
 
@@ -348,5 +349,18 @@ $(document).ready(function () {
       $(".result-search-box").hide();
     }
   });
+
+ 
+    //  wishlist scale editable button nya
+        $(".wishlist-wrapper").on("click", ".wishlist-status", function() {
+        var scaleUp = $(this).find(".scale-up");
+        scaleUp.toggleClass("active");
+    });
+
+
+
+
+
+
 
 });

@@ -4,7 +4,7 @@
 .modal-container{
     display: none;
     position: relative;
-    max-height: 100vh;
+    height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -19,15 +19,14 @@
 .modal-container.active{
     display: flex;
     position:fixed;
-    height: 100vh;
+    height: auto;
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: -20%;
-    left: 0;
+    top: 20%;
     opacity: 1;
     z-index: 999;
-    transform: translateY(0%) scale(1);
+    transform: translateX(0%) scale(1);
     pointer-events: auto;
     transition: transform 500ms ease-in-out;
 
@@ -57,9 +56,24 @@
     display: flex;
     width: 100%;
     padding: 2rem;
-
 }
 
+.modal-container .modal-box .modal-header .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.modal-container .modal-box .modal-header .title b{
+    font-size: 2.5rem;
+    color: #269026;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .modal-container .modal-box .modal-header .close-btn{
     position: absolute;
     z-index: 2;

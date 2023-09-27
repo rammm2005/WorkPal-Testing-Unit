@@ -55,7 +55,6 @@
         grid-column-gap: 13px;
         grid-row-gap: 9px;
         align-content: center;
-        min-height: 100vh;
         max-width: 100%;
     }
 
@@ -153,7 +152,6 @@
         grid-column-gap: 13px;
         grid-row-gap: 9px;
         align-content: center;
-        min-height: 100vh;
         max-width: 100%;
     }
 
@@ -326,7 +324,6 @@
         grid-column-gap: 13px;
         grid-row-gap: 9px;
         align-content: center;
-        min-height: 100vh;
         max-width: 100%;
     }
 
@@ -479,6 +476,45 @@
         flex-wrap: nowrap;
         gap: 3px;
     }
+
+    /* Wishlist */
+    .wishlist-header-content{
+        width: 100%;
+    }
+    .wishlist-header-content .wishlist-title h3{
+        font-size: 3rem;
+    }
+
+    .wishlist-header-content .wishlist-title .text{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+
+    .wishlist-header-content .create-list{
+        width: 65%;
+    }
+
+    .wishlist-header-content .create-list .btn-create-list{
+       width: 100%;
+    }
+
+    .wishlist-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+    }
+
+    .wishlist-wrapper .wishlist-card-content{
+        width: 100%;
+    }
+
+    .wishlist-wrapper .wishlist-card-content .img-wishlist a img{
+        height: 20vh;
+    }
+
 }
 
 
@@ -521,7 +557,6 @@
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 13px;
         grid-row-gap: 9px;
-        min-height: 100vh;
         max-width: 100%;
     }
 
@@ -633,4 +668,38 @@
     }
 
 
+
+    /* Wishlist */
+    .wishlist-header-content{
+        width: 100%;
+    }
+    .wishlist-header-content .wishlist-title h3{
+        font-size: 3rem;
+    }
+
+    .wishlist-header-content .wishlist-title .text{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+
+    .wishlist-header-content .create-list{
+        width: 65%;
+    }
+
+    .wishlist-header-content .create-list .btn-create-list{
+       width: 100%;
+    }
+
+    .wishlist-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+    }
+
+    .wishlist-wrapper .wishlist-card-content{
+        width: 100%;
+    }
 }

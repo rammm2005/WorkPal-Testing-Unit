@@ -144,11 +144,11 @@
         <div class="wishlist-header-content">
             <div class="wishlist-title">
                 <h3>My WishList</h3>
-                <p class="text">Manage your Wislist Freelance job and share with your team Easily <b>.</b></p>
+                <p class="text">Manage your Wishlist Freelance job and share with your team Easily for make more best experience<b>.</b></p>
             </div>
             <div class="create-list">
-                <button class="btn-create-list">
-                    <i class='bx bxs-plus-circle'></i> Create New Wishlist
+                <button class="btn-create-list modal-show" data-modal-target="create-wishlist">
+                    <i class='bx bxs-plus-circle'></i> New Wishlist
                 </button>
             </div>
         </div>
@@ -157,19 +157,26 @@
         <div class="wishlist-wrapper">
             <div class="wishlist-card-content">
                 <div class="img-wishlist">
-                    <img src="../resource/image/Workpal-freelanceImg/design/1.png" alt="wishlist-Bg">
+                    <a href="details/wishlist-detail.html"><img src="../resource/image/Workpal-freelanceImg/7.png"
+                            alt="wishlist-Bg"></a>
                 </div>
                 <div class="wishlist-card">
                     <h4>Rama List</h4>
                     <div class="description-list">
-                        my first wishlist is here , for design and web developer
+                        My first wishlist is here , SEO and CTO website.
                     </div>
                     <div class="footer-card">
-                        <div class="wishlist-status">
-                            <i class='bx bxs-low-vision'></i>
-                        </div>
+
                         <div class="share">
                             <i class='bx bx-share-alt'></i>
+                        </div>
+                        <div class="wishlist-status" id="dots-wishlist">
+                            <i class='bx bx-dots-horizontal-rounded'></i>
+                            <div class="scale-up">
+                                
+                                    <button class="edit-wishlist"><i class='bx bx-edit-alt'></i> Edit</button>
+                                    <button class="delete-wishlist"><i class='bx bx-trash'></i> Delete</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,7 +184,8 @@
 
             <div class="wishlist-card-content">
                 <div class="img-wishlist">
-                    <img src="../resource/image/Workpal-freelanceImg/design/4.png" alt="wishlist-Bg">
+                    <a href="details/wishlist-detail.html"><img src="../resource/image/Workpal-freelanceImg/6.png"
+                            alt="wishlist-Bg"></a>
                 </div>
                 <div class="wishlist-card">
                     <h4>New List</h4>
@@ -185,11 +193,16 @@
                         My Second wishlist is here , for AI maker and App developer.
                     </div>
                     <div class="footer-card">
-                        <div class="wishlist-status">
-                            <i class='bx bx-show-alt'></i>
-                        </div>
                         <div class="share">
                             <i class='bx bx-share-alt'></i>
+                        </div>
+                        <div class="wishlist-status" id="dots-wishlist">
+                            <i class='bx bx-dots-horizontal-rounded'></i>
+                            <div class="scale-up">
+                                
+                                    <button class="edit-wishlist"><i class='bx bx-edit-alt'></i> Edit</button>
+                                    <button class="delete-wishlist"><i class='bx bx-trash'></i> Delete</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -421,7 +434,6 @@
 
 
 
-
     <!-- Modals -->
 
     <section class="modal-container" id="modals-search">
@@ -482,6 +494,40 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-container" id="create-wishlist">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="title">
+                    Create New WishList <b> .</b>
+                </div>
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="wishlist-container">
+                        <form action="#" class="input-form">
+                            <div class="input-wishlist">
+                                <label for="title" class="wishlist-label">Title</label>
+                                <input type="text" name="title" id="title" class="textinput-control" placeholder="Field your Wishlist Title...">
+                            </div>
+
+                            <div class="input-wishlist">
+                                <label for="description" class="wishlist-label">Description</label>
+                                <textarea name="description" id="description" cols="30" rows="10" class="textarea-control" placeholder="For Example (Smart AI Maker for our App ecosystem)"></textarea>
+                            </div>
+
+                            <div class="btn-group">
+                                <button class="btn-cancel close-btn">Cancel</button>
+                                <button class="btn-submit">Create New List</button>
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>
