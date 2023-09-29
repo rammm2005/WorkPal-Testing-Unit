@@ -39,14 +39,14 @@ $(document).ready(function () {
         $(navLink).attr("data-visible", "true");
         $(toogleNav).attr("aria-expanded", "true");
         $(closeNav).css("transform", "translateX(0)");
-        $(closeNav).css("z-index" , "999");
-        $("body").toggleClass("active").css("z-index","999");
+        $(closeNav).css("z-index", "999");
+        $("body").toggleClass("active").css("z-index", "999");
       } else if (visiblelity === "true") {
         $(navLink).attr("data-visible", "false");
         $(toogleNav).attr("aria-expanded", "false");
         $(closeNav).css("transform", "translateX(100%)");
-        $(closeNav).css("z-index" , "998");
-        $("body").removeClass("active").css("z-index","999");
+        $(closeNav).css("z-index", "998");
+        $("body").removeClass("active").css("z-index", "999");
         toogleNav.removeClass("active");
       }
     } else {
@@ -282,7 +282,7 @@ $(document).ready(function () {
     const targetModal = $(this).attr("data-modal-target");
     $("#" + targetModal).addClass("active");
     $(".modal-container").show();
-    $(".modal-container").css("display","flex");
+    $(".modal-container").css("display", "flex");
     $("body").addClass("active");
   });
 
@@ -308,18 +308,18 @@ $(document).ready(function () {
     let inputVal = $(this).val().toLowerCase();
     if (inputVal === "") {
       $(".result-search-box").hide();
-      $(".not-found").hide(); 
+      $(".not-found").hide();
     } else {
       $(".result-search-box").show();
     }
 
-    let found = false; 
+    let found = false;
 
     // filter
     $(".content-result-search").each(function () {
       if ($(this).text().toLowerCase().indexOf(inputVal) > -1) {
         $(this).show();
-        found = true; 
+        found = true;
       } else {
         $(this).hide();
       }
@@ -336,7 +336,7 @@ $(document).ready(function () {
   // 1 dari search di click
   $(".content-result-search").click(function () {
     let selectedText = $(this).text();
-     selectedText = selectedText.trim();
+    selectedText = selectedText.trim();
     $("#search").val(selectedText);
     $(".result-search-box").hide();
 
@@ -350,17 +350,34 @@ $(document).ready(function () {
     }
   });
 
- 
-    //  wishlist scale editable button nya
-        $(".wishlist-wrapper").on("click", ".wishlist-status", function() {
-        var scaleUp = $(this).find(".scale-up");
-        scaleUp.toggleClass("active");
-    });
+  //  wishlist scale editable button nya
+  $(".wishlist-wrapper").on("click", ".wishlist-status", function () {
+    var scaleUp = $(this).find(".scale-up");
+    scaleUp.toggleClass("active");
+  });
 
+  // Faq function
+  $(".accrodion-left .faq").click(function () {
+    let clickedLi = $(this).closest(".faq");
 
+    $(".accrodion-left .faq").not(clickedLi).removeClass("showAnswer");
 
+    clickedLi.toggleClass("showAnswer");
+  });
 
+  // Comunity card about
+  const comunityCards = $(".comunity .comunity-card");
 
+  let maxHeight = 0;
 
+  comunityCards.each(function () {
+    const cardHeight = $(this).outerHeight();
+    if (cardHeight > maxHeight) {
+      maxHeight = cardHeight;
+    }
+  });
 
+  comunityCards.css("height", `${maxHeight}px`);
+
+  
 });

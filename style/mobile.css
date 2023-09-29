@@ -192,6 +192,13 @@
         max-width: 70%;
     }
 
+    .comunity{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 8px;
+        grid-row-gap: 9px;
+    }
+
 }
 
 @media(max-width:768px) {
@@ -483,11 +490,12 @@
     }
     .wishlist-header-content .wishlist-title h3{
         font-size: 3rem;
+        width: 100%;
     }
 
     .wishlist-header-content .wishlist-title .text{
         font-size: 1.3rem;
-        width: 100%;
+        width: 88%;
     }
 
 
@@ -513,6 +521,46 @@
 
     .wishlist-wrapper .wishlist-card-content .img-wishlist a img{
         height: 20vh;
+    }
+
+    /* About Us */
+    .img-header-about{
+        padding: 1.5rem;
+    }
+
+    .img-header-about img{
+        position: relative;
+        max-height: 60vh;
+        height: 25vh;
+        background-attachment: fixed;
+        background-position: right !important;
+    }
+
+    .img-header-about .text{
+        max-width: 90%;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .img-header-about .text h3{
+      font-size: 3rem;
+      max-width: 100%;
+
+    }
+    .img-header-about .text p{
+        max-width: 100%;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .comunity{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 8px;
+        grid-row-gap: 9px;
     }
 
 }
@@ -675,11 +723,13 @@
     }
     .wishlist-header-content .wishlist-title h3{
         font-size: 3rem;
+        width: 100%;
+
     }
 
     .wishlist-header-content .wishlist-title .text{
         font-size: 1.3rem;
-        width: 100%;
+        width: 88%;
     }
 
 
@@ -702,4 +752,124 @@
     .wishlist-wrapper .wishlist-card-content{
         width: 100%;
     }
+
+    /* share */
+    .share-modal .share-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 2.5rem;
+    }
+
+    /* About */
+
+    .img-header-about{
+        padding: 1.5rem;
+    }
+
+    .img-header-about img {
+        position: relative;
+        max-height: 60vh;
+        height: 25vh;
+        background-attachment: fixed;
+        background-position: right !important;
+        object-fit: initial; 
+        width: 100%; 
+    }
+    
+    .img-header-about img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../resource/image/bg-section/about-banner.webp");
+        background-size: cover;
+        background-position: right top; 
+        opacity: 0.5; 
+        z-index: -1;
+    }
+    
+
+
+    .img-header-about .text{
+        max-width: 90%;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+    }
+
+    .img-header-about .text h3{
+      font-size: 2.8rem;
+      max-width: 100%;
+
+    }
+    .img-header-about .text p{
+        max-width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+
+    .about-container .about-content .how-we-work{
+        padding: 1.4rem;
+    }
+
+    .about-container .about-content .how-we-work .left-content{
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-attachment: fixed;
+        background-position: right !important;
+        object-fit: initial; 
+    }
+    .about-container .about-content .how-we-work .left-content::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../resource/image/bg-section/bg-banner-green.png");
+        background-size: cover;
+        background-position: center bottom; 
+        opacity: 0.5; 
+        z-index: -1;
+    }
+
+    .about-container .about-content .how-we-work .right{
+        max-width: 18rem;
+    }
+    .about-container .about-content .how-we-work .right img{
+       display: none;
+    }
+
+    .comunity{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 8px;
+        grid-row-gap: 9px;
+    }
+
+    .accordion .accordion-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .accordion-content .right-form img{
+        width: 100%;
+    }
+
+    .accordion-content .accrodion-left{
+        padding:1rem;
+    }
+
+    .accordion-content .accrodion-left .faq{
+        width: 100%;
+    }
+
+
 }
