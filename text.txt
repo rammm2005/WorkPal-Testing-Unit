@@ -206,3 +206,41 @@ $(document).ready(function() {
 .search-header .search-form .search-icon-label:hover {
     background-color: var(--bg-lime-green);
 }
+
+
+var currentSlide = 0;
+        var slides = $(".slider-content");
+        var slideCount = slides.length;
+        var itemsPerSlide = 5;
+        var slideWidth = slides.eq(0).outerWidth(); 
+
+        function showSlides(startIndex) {
+            var translateX = -startIndex * slideWidth; 
+            slides.css("transform", "translateX(" + translateX + "px)"); // Mengubah transformasi pada semua elemen .slider-content
+        }
+
+
+        showSlides(currentSlide);
+
+        $("#slideCategoryLeft").click(function() {
+            if (currentSlide > 0) {
+                currentSlide = (currentSlide - itemsPerSlide + slideCount) % slideCount;
+                showSlides(currentSlide);
+            }
+            if (currentSlide === 0) {
+                $(".control #left").prop("disabled", true);
+            }
+            $(".control #right").prop("disabled", false);
+        });
+
+        // left botton
+        $("#slideCategoryRight").click(function() {
+            if (currentSlide + itemsPerSlide < slideCount) {
+                currentSlide = (currentSlide + itemsPerSlide) % slideCount;
+                showSlides(currentSlide);
+            }
+            if (currentSlide + itemsPerSlide >= slideCount) {
+                $(".control #right").prop("disabled", true);
+            }
+            $(".control #left").prop("disabled", false);
+        });

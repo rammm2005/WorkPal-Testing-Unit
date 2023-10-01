@@ -350,7 +350,6 @@ $(document).ready(function () {
     }
   });
 
-  //  wishlist scale editable button nya
   $(".wishlist-wrapper").on("click", ".wishlist-status", function () {
     var scaleUp = $(this).find(".scale-up");
     scaleUp.toggleClass("active");
@@ -378,6 +377,31 @@ $(document).ready(function () {
   });
 
   comunityCards.css("height", `${maxHeight}px`);
+
+  // Notif show
+  const toogleNotif = $("#notification");
+  const notifClose = $("#notif-close");
+
+  toogleNotif.click(function () {
+    $(".notification-show").toggleClass("showing");
+  });
+
+  notifClose.click(function () {
+    $(".notification-show").removeClass("showing");
+  });
+
+  const soundIcon = $("#footer-notif");
+  const soundText = $("#sound-text");
+
+  soundIcon.click(function () {
+    if (soundIcon.hasClass("bx-volume-full")) {
+      soundIcon.removeClass("bx-volume-full").addClass("bx-volume-mute");
+      soundText.text("Muted");
+    } else {
+      soundIcon.removeClass("bx-volume-mute").addClass("bx-volume-full");
+      soundText.text("Sound");
+    }
+  });
 
   
 });

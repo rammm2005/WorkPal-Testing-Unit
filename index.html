@@ -67,8 +67,8 @@
                     <a href="page/wishlist.html"><i class='bx bx-heart'></i></a>
                 </div>
 
-                <div class="cart">
-                    <a href=""><i class='bx bx-cart'></i></a>
+                <div class="cart" id="notification">
+                    <i class='bx bx-bell' ></i>
                 </div>
 
 
@@ -80,6 +80,73 @@
                 <li class="nav-link">
                     <button class="btn-sign-up"><a href="page/login.html">Sign Up</a></button>
                 </li>
+            </div>
+        </div>
+
+        <div class="notification-show">
+            <div class="notification-header">
+                <div class="left">
+                    <i class='bx bx-bell'></i>
+                </div>
+                <h5>Notitication (3)</h5>
+                <div class="close" id="notif-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+            <div class="notification-body">
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/payment-success.jpg" alt="">
+                        <div class="text-info">
+                            <h4>Workpal Payment Success</h4>
+                            <p>your payment form mr.Smith was done and now the work is being done</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            23 Agust 2023 , 17.00pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/notif.jpg" alt="">
+                        <div class="text-info">
+                            <h4>Checkout your Wishlist</h4>
+                            <p>hire your freelance to work your task and job</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            24 september 2023 , 1.00pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/notif1 (2).jpg" alt="">
+                        <div class="text-info">
+                            <h4>Become a freelance ?</h4>
+                            <p>Try to join us for easly have job and work and got client arround the country</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            30 october 2023 , 16.00pm
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-notif" >
+                <div class="setting">
+                    <i class='bx bx-volume-full' id="footer-notif"></i>
+                    <p id="sound-text">Sound</p>
+                </div>
             </div>
         </div>
 
@@ -334,7 +401,7 @@
                             I will make a great Website for you with Javascript and React Framework , with full code.
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     5<i class='bx bxs-star'></i>
@@ -366,7 +433,7 @@
                             I can help you to to wrote 2000 words SEO article and blog for your post.
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     4.8<i class='bx bxs-star'></i>
@@ -399,7 +466,7 @@
                             I will be your Social Media Marketing manager and personal assistant.
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     4.7<i class='bx bxs-star'></i>
@@ -432,7 +499,7 @@
                             I can be your UI UX Design for your website and for your Application.
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     4.5<i class='bx bxs-star'></i>
@@ -469,7 +536,7 @@
                             I am a designer Logo , I can make custom logo for my customer and very special design
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     5<i class='bx bxs-star'></i>
@@ -502,7 +569,7 @@
                             I will grow your LinkedIn , Instagram , Tik Tok and all your social media
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     4.8<i class='bx bxs-star'></i>
@@ -536,7 +603,7 @@
                             Im a profesional Translator , I can translate more than 5 languages in the world.
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     4.7<i class='bx bxs-star'></i>
@@ -571,7 +638,7 @@
 
                         </a>
                         <div class="footer-card">
-                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Buy Now</button>
+                            <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
                             <span class="price">
                                 <div class="rating">
                                     4.5<i class='bx bxs-star'></i>
