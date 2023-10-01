@@ -403,5 +403,15 @@ $(document).ready(function () {
     }
   });
 
+
+  // Hovered Images
+  $(".image-hover img").hover(
+    function () {
+        $(this).siblings(".hover-btn").fadeIn();
+    },
+    function () {
+        $(this).siblings(".hover-btn").fadeOut();
+    }
+);
   
 });

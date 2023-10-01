@@ -2786,7 +2786,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 .category-slide-most-popular .slider-wrapper .slider-content i{
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: var(--text-black);
 }
 
@@ -2830,6 +2830,122 @@ input[type="search"]::-webkit-search-clear-button {
 .category-slide-most-popular .control button:hover{
     background-color:#eae5e5;
 }
+
+
+.category-page{
+    padding: 2rem 3%;
+    position: relative;
+    width: 100%;
+}
+.category-page .category-content-all{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    place-items: center;
+}
+
+.category-page .category-content-all  .category-workpal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem;    
+}
+
+.category-page .category-content-all  .category-workpal .image-hover{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.category-page .category-content-all  .category-workpal .image-hover img{
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.category-page .category-content-all  .category-workpal .image-hover img:hover{
+    transform: scale(1.1);
+    transition: all ease .7s;
+}
+
+
+
+.category-page .category-content-all  .category-workpal .image-hover .hover-btn{
+    display: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000068;
+    backdrop-filter: blur(30px);
+    opacity: 0;
+}
+
+
+.category-page .category-content-all  .category-workpal .image-hover .hover-btn .btn-hovered{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: var(--bg-white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 2px solid hsl(122, 68%, 45%);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all ease .6;
+    border-radius: 5px;
+    transition: all ease .7s;
+    opacity: 1 !important;
+}
+
+
+.category-page .category-content-all  .category-workpal .image-hover .hover-btn .btn-hovered:hover{
+    background-color: #ffffff27;
+    transition: all ease .7s;
+
+}
+
+.category-workpal .content-desc{
+    background-color: var(--bg-box);
+    padding: 1rem;
+    position: relative;
+}
+
+.category-workpal .content-desc h5{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.category-workpal .content-desc span{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+
+.category-acc{
+    padding: 2rem 2%;
+    margin-top: 2rem;
+}
+.category-acc h3{
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-black);
+    margin-bottom: 1rem;
+}
+
+
 
 
 

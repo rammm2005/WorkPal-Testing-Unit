@@ -32,7 +32,8 @@
 
 [class^="imghvr-"] figcaption,
 [class*=" imghvr-"] figcaption {
-    background-color: #135796;
+    background-color: hsla(0, 0%, 0%, 0.693);
+    backdrop-filter: blur(30px);
     padding: 30px;
     position: absolute;
     top: 0;
@@ -92,7 +93,7 @@
 
 [class^="imghvr-fade"]:hover figcaption,
 [class*=" imghvr-fade"]:hover figcaption {
-    opacity: 1;
+    opacity: .7;
 }
 
 [class^="imghvr-fade"]:hover > img,
@@ -101,6 +102,50 @@
 [class*=" imghvr-fade"]:hover figcaption {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+}
+
+.hovered-btn-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    /* top: 40%; */
+    height: 100%;
+    opacity: 1;
+}
+
+.btn-hovered{
+    position: relative;
+    text-decoration: none;
+    color: var(--bg-white);
+    font-weight: 700;
+    max-height: 6vh;
+    font-size: 1.5rem;
+    border: 2px solid hsl(122, 68%, 45%);
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    background-color: hwb(0 100% 0% / 0.165) !important;
+}
+
+@media (max-width:450px) {
+    .btn-hovered{
+        max-height: 3vh;
+        border: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .btn-hovered{
+        max-height: 3vh;
+        border: none;
+        text-align: center;
+    }
 }
 
 /* imghvr-fade

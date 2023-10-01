@@ -599,6 +599,24 @@
     
     }
 
+    /* Category */
+
+    .category-page .category-content-all{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        place-items: center;
+    }
+
+    .category-workpal .content-desc{
+        background-color: var(--bg-box);
+        padding: 2rem;
+        position: relative;
+    }
+
 }
 
 
@@ -930,16 +948,84 @@
     }
 
     /* Category Popular */
+
+
+    .category-banner-content .text{
+        max-width: 80%;
+        align-items: center;
+        text-align: center;
+    }
     .category-slide-most-popular .slider-wrapper {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
 
     .category-slide-most-popular .slider-wrapper .slider-content{
         width: 100%; 
+    }
+
+
+    .category-banner-content img{
+        position: relative;
+        height: 20vh;
+        max-height: 20vh;
+         background-attachment: fixed;
+        background-position: right !important;
+        object-fit: initial; 
+        width: 100%; 
+    }
+
+    .category-banner-content img::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center bottom; 
+        opacity: 0.5; 
+        z-index: -1;
+    }
+
+
+    .category-banner-content .text{
+        display: flex;
+        position: absolute;
+        max-width: 85%;
+        place-items: center;
+        padding:0;
+    }
+
+    .category-banner-content .text h3{
+      font-size: 2.8rem;
+      max-width: 100%;
+
+    }
+    .category-banner-content .text p{
+        max-width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .category-page .category-content-all{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        place-items: center;
+    }
+
+    .category-workpal .content-desc{
+        background-color: var(--bg-box);
+        padding: 2rem;
+        position: relative;
     }
     
 
