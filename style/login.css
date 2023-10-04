@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background-color: hsl(0, 21%, 92%) !important;
+    background-color: hwb(0 94% 5%) !important;
 }
 
 

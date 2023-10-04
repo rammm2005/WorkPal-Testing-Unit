@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="../resource/image/logo-img.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="../resource/image/logo-img.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../resource/image/logo-img.png" sizes="16x16">
+    <link rel="stylesheet" href="../style/core.css">
+    <link rel="stylesheet" href="../style/mobile.css">
+    <link rel="stylesheet" href="../plugins/boxicons-2.0.7/css/boxicons.css">
+    <link rel="stylesheet" href="../style/modals.css">
+    <title>WorkPal | Hire Freelance Service</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+
+    <header class="main-header">
+        <div class="header-wrapper">
+            <div class="logo-workpal">
+                <span class="logo-img">
+                    <a href="../index.html">
+                        <img src="../resource/image/main-logo.png" alt="Logo Image">
+                    </a>
+                </span>
+            </div>
+
+
+
+
+            <nav class="workpal-nav" id="navigation-link" data-visible="false">
+                <ul>
+                    <li class="nav-link">
+                        <a href="about.html" class="text-link">How to Work</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="service-page.html" class="text-link">Hire Freelance</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <span><i class='bx bx-globe'></i> Eng</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../seller-pages/become-freelance.html" class="text-link">Become Freelancer</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="login.html" class="text-link">Sign In</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="icons" id="toogleIcons">
+
+                <button class="toogle-search-btn modal-show" id="toogle-search" data-modal-target="modals-search">
+                    <i class='bx bx-search-alt-2'></i>
+                    <i class='bx bx-x' id="x-search"></i>
+                </button>
+
+                <div class="wishlist">
+                    <a href="wishlist.html"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="cart" id="notification">
+                    <i class='bx bx-bell'></i>
+                </div>
+
+
+                <div class="toogle-nav" id="toogle-nav" aria-expanded="false">
+                    <i class='bx bxs-dashboard'></i>
+                    <i class='bx bx-x sr-auto' id="sr-x"></i>
+                </div>
+
+                <li class="nav-link">
+                    <button class="btn-sign-up"><a href="login.html">Sign Up</a></button>
+                </li>
+            </div>
+        </div>
+
+        <div class="notification-show">
+            <div class="notification-header">
+                <div class="left">
+                    <i class='bx bx-bell'></i>
+                </div>
+                <h5>Notitication (3)</h5>
+                <div class="close" id="notif-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+            <div class="notification-body">
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/payment-success.jpg" alt="">
+                        <div class="text-info">
+                            <h4>Workpal Payment Success</h4>
+                            <p>your payment form mr.Smith was done and now the work is being done</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            23 Agust 2023 , 17.00pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/notif.jpg" alt="">
+                        <div class="text-info">
+                            <h4>Checkout your Wishlist</h4>
+                            <p>hire your freelance to work your task and job</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            24 september 2023 , 1.00pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/notif1 (2).jpg" alt="">
+                        <div class="text-info">
+                            <h4>Become a freelance ?</h4>
+                            <p>Try to join us for easly have job and work and got client arround the country</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            30 october 2023 , 16.00pm
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-notif">
+                <div class="setting">
+                    <i class='bx bx-volume-full' id="footer-notif"></i>
+                    <p id="sound-text">Sound</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Menu -->
+        <div class="category-menu" id="categoryMenu">
+
+            <div class="category-menu-wrapper">
+                <div class="prev" id="prevNav">
+                    <i class='bx bxs-chevron-left'></i>
+                </div>
+                <ul>
+                    <li class="nav-link">
+                        <a href="category/category.html">Digital Marketing</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Grafic & Design</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Data Sience</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Programing & Tech</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Business</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Animation</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Writer & Translater</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Music & Audio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">AI Service</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Artis Voice</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Logo Maker</a>
+                    </li>
+
+                </ul>
+
+                <div class="next" id="nextNav">
+                    <i class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Category Menu -->
+    </header>
+    <!-- End Header -->
+
+
+    <div class="hire-freelance">
+        <div class="sub-link">
+            <a href="../index.html"><i class='bx bx-home'></i></a>
+            <span>/</span>
+            <a href="service-page.html" class="link">Hire Freelance</a>
+        </div>
+        <div class="text-title">
+            <h3>Find Freelance to finish your Job</h3>
+            <span>Hire young and Profesinal Freelance for finish all your Job with fast and Greate Job <b>.</b></span>
+        </div>
+    </div>
+
+
+    <!-- Category Recomended -->
+
+
+    <div class="famos-category-wrapper">
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/AI rep.jpg" class="img-slide-category" alt="">
+            <span>AI Service</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/apple.png" class="img-slide-category" alt="">
+            <span>IOS Developer</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/asitektur.jpg" class="img-slide-category" alt="">
+            <span>Interior Design</span>
+        </a>
+
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/data-analis.jpg" class="img-slide-category" alt="">
+            <span>Data Analyst</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/data-sience.jpg" class="img-slide-category" alt="">
+            <span>Data Sience</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/grafic.jpg" class="img-slide-category" alt="">
+            <span>Grafic Designer</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/SEO.jpg" class="img-slide-category" alt="">
+            <span>SEO Marketing</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/video.jpg" class="img-slide-category" alt="">
+            <span>Video Ads & Editing</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/animation.gif" class="img-slide-category" alt="">
+            <span>Character Animation</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/bussines-consultan.jpg" class="img-slide-category" alt="">
+            <span>Bussines Consultan</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/lengueage-translate.jpg" class="img-slide-category" alt="">
+            <span>Translater lenguage</span>
+        </a>
+
+        <a href="category/category.html" class="famos-category-content">
+            <img src="../../resource/image/category/music.jpg" class="img-slide-category" alt="">
+            <span>Audio & Music Editing</span>
+        </a>
+
+    </div>
+
+
+    <div class="filter-wrapper">
+        <div class="filter-content">
+            <div class="left-content-filter">
+                <button class="btn-filter">
+                    <span>Sort By Service</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <button class="btn-filter">
+                    <span>Sort By Freelance Location</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <button class="btn-filter">
+                    <span>Sort By Budget</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <button class="btn-filter">
+                    <span>Sort By Delivery Time</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+            </div>
+
+            <div class="right-content-filter">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="checked">
+                    <span class="slider"></span>
+                </label>
+                <label for="checked" class="text">Join Pro</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-service-show">
+        <div class="show">
+            <span>available 8,900 freelance service</span>
+        </div>
+        <button class="filter-sort">
+            Sort By :
+            <select name="" class="sort-select" id="">
+                <option value="">Recomendations</option>
+                <option value="">Best of Sell</option>
+                <option value="">Newest Freelance Service</option>
+            </select>
+        </button>
+    </div>
+
+    <div class="main-conteiner">
+
+
+
+        <div class="product-wrapper" id="productWrapper">
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/1.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Mr.Smith</h4>
+                        </span>
+                        <p class="level-top">top Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I will make a great Website for you with Javascript and React Framework , with full code.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.1,000</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/4.png"
+                            alt="Website Freelance" class="slide-img"></a>
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Mrs.Darlia</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I can help you to to wrote 2000 words SEO article and blog for your post.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.8<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.800</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/2.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Jhon Carl</h4>
+                        </span>
+                        <p class="level-pro">Pro Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I will be your Social Media Marketing manager and personal assistant.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.7<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.500</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/3.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Jenifer Sam</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I can be your UI UX Design for your website and for your Application.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Second Content product -->
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/3.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Gusde</h4>
+                        </span>
+                        <p class="level-top">top Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I am a designer Logo , I can make custom logo for my customer and very special design
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.1,000</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/4.png"
+                            alt="Website Freelance" class="slide-img"></a>
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Juliana Rogi</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I will grow your LinkedIn , Instagram , Tik Tok and all your social media
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.8<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.800</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/2.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>I Made</h4>
+                        </span>
+                        <p class="level-new">Pro Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        Im a profesional Translator , I can translate more than 5 languages in the world.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.7<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.500</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/1.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Second -->
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/8.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Mr.Smith</h4>
+                        </span>
+                        <p class="level-top">top Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I will make a great Website for you with Javascript and React Framework , with full code.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.1,000</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/7.png"
+                            alt="Website Freelance" class="slide-img"></a>
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Mrs.Darlia</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I can help you to to wrote 2000 words SEO article and blog for your post.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.8<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.800</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/6.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Jhon Carl</h4>
+                        </span>
+                        <p class="level-pro">Pro Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I will be your Social Media Marketing manager and personal assistant.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.7<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.500</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/5.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Jenifer Sam</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I can be your UI UX Design for your website and for your Application.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Second Content product -->
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/4.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Gusde</h4>
+                        </span>
+                        <p class="level-top">top Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I am a designer Logo , I can make custom logo for my customer and very special design
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.1,000</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/3.png"
+                            alt="Website Freelance" class="slide-img"></a>
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Juliana Rogi</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        I will grow your LinkedIn , Instagram , Tik Tok and all your social media
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.8<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.800</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/2.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>I Made</h4>
+                        </span>
+                        <p class="level-new">Pro Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        Im a profesional Translator , I can translate more than 5 languages in the world.
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.7<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.500</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/design/1.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pagination" id="pagination"></div>
+
+    </div>
+
+
+
+    <p id="to-top" class="to-top">
+        <a href="#top" class="top-link"><i class='bx bx-arrow-to-top'></i></a>
+    </p>
+
+
+
+    <div class="section-footer">
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="quick-link">
+                    <h4>WorkPal Categories</h4>
+                    <li class="footer-link">
+                        <a href="">Data Sience</a>
+                        <a href="">Digital Marketing</a>
+                        <a href="">Grafic & Design</a>
+                        <a href="">Bussiness</a>
+                        <a href="">Programing Tech</a>
+                        <a href="">Translater</a>
+                        <a href="">Digital Marketing</a>
+                        <a href="">AI Service</a>
+                        <a href="">Music & Audio <p class="btn-small-rounded">New</p> </a>
+                    </li>
+                </div>
+
+                <div class="quick-link">
+                    <h4>About Us</h4>
+                    <li class="footer-link">
+                        <a href="">FAQ / Help</a>
+                        <a href=""> How to Work</a>
+                        <a href="">Our Teams</a>
+                    </li>
+                </div>
+
+
+                <div class="quick-link">
+                    <h4>Connect with Us</h4>
+                    <li class="footer-link">
+                        <a href="" class="social-link"><i class='bx bxl-instagram instagram'></i> Instagram</a>
+                        <a href="" class="social-link"> <i class='bx bxl-facebook-circle facebook'></i> Facebook</a>
+                        <a href="" class="social-link"><i class='bx bxl-linkedin-square linkedin'></i> Linkedin</a>
+                        <a href="" class="social-link"><i class='bx bxl-twitter twitter'></i> Twitter</a>
+                        <a href="" class="social-link"><i class='bx bxl-pinterest pintrest'></i> Pintrest</a>
+                    </li>
+                </div>
+
+                <div class="quick-link">
+                    <div class="top-content">
+                        <h4>Call</h4>
+                        <a href=""><i class='bx bx-envelope'></i> workpalcompany@ac.id</a>
+                        <a href=""><i class='bx bxs-phone'></i> +123456789</a>
+                    </div>
+
+                    <div class="bottom-content">
+                        <h4>Security</h4>
+                        <img src="../resource/image/security/BCA.webp" alt="" class="security">
+                        <img src="../resource/image/security/master-card.png" alt="" class="security">
+                        <img src="../resource/image/security/visa.png" alt="" class="security">
+                        <img src="../resource/image/security/ssl.jpg" alt="" class="security">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <a href="../index.html"><img src="../resource/image/main-logo.png" alt="" class="logo"></a>
+                <p>&copy; 2023 All right and reserved by WorkPal</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modals -->
+
+    <section class="modal-container" id="modals-search">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="search-container">
+                    <form action="#" method="#" class="search-form">
+                        <input type="search" name="search" id="search"
+                            placeholder="What Freelance service are you looking for now..." autocomplete="off"
+                            class="search-input">
+                        <button class="search-btn"><i class='bx bx-search'></i></button>
+                    </form>
+
+                    <div class="result-search-box">
+                        <ul>
+                            <li class="content-result-search">
+                                Freelancer Web Design <div class="btn-popular">Popular</div>
+                            </li>
+                            <li class="content-result-search">
+                                Best Freelancer for Logo Maker
+                            </li>
+                            <li class="content-result-search">
+                                Cheaper Freelance
+                            </li>
+                            <li class="content-result-search">
+                                Freelancer with best Rating
+                            </li>
+                            <li class="content-result-search">
+                                SEO for Website Enggine
+                            </li>
+                            <li class="content-result-search">
+                                How to fix Ai bugs <div class="btn-popular">Popular</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="not-found">Result Not Found</p>
+
+                    <div class="history-search">
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p> Ai Maker with Python</p>
+                        </div>
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p>Profesional Photografer</p>
+                        </div>
+
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p>Developer Eccommers Apps</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- End WishList Section -->
+    <script src="../plugins/jquery v3.6.0/jquery.js"></script>
+    <script src="../plugins/smooth-scroll v15.1.3/dist/smooth-scroll.polyfills.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

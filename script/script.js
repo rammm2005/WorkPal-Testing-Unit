@@ -6,6 +6,7 @@ $(document).ready(function () {
 
   function toggleCategoryMenu() {
     let currentScroll = $(window).scrollTop();
+    // console.log($(window).scrollTop());
 
     if (currentScroll > lengthScroll) {
       categoryMenu.css("display", "flex");
@@ -403,15 +404,128 @@ $(document).ready(function () {
     }
   });
 
-
   // Hovered Images
   $(".image-hover img").hover(
     function () {
-        $(this).siblings(".hover-btn").fadeIn();
+      $(this).siblings(".hover-btn").fadeIn();
     },
     function () {
-        $(this).siblings(".hover-btn").fadeOut();
+      $(this).siblings(".hover-btn").fadeOut();
     }
-);
-  
+  );
+
+  // Product Pagination
+  const productWrapper = $("#productWrapper");
+  const pagination = $("#pagination");
+  const itemsPerPage = 8;
+  const totalItems = $(".product-content").length;
+  let currentPage = 1;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  function showPage(page) {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const products = $(".product-content");
+
+    products.hide();
+
+    for (let i = start; i < end; i++) {
+      if (i < totalItems) {
+        const product = products.eq(i);
+        const skeleton = $('<div class="loading-skeleton"></div>');
+        productWrapper.append(skeleton);
+      }
+    }
+
+    setTimeout(function () {
+      productWrapper.find(".loading-skeleton").remove();
+      for (let i = start; i < end; i++) {
+        if (i < totalItems) {
+          const product = products.eq(i);
+          product.show();
+        }
+      }
+    }, 2000);
+  }
+
+  function createPaginationButtons() {
+    const prevButton = $(
+      '<button><i class="bx bx-left-arrow-alt"></i></button>'
+    );
+    prevButton.click(function () {
+      if (currentPage > 1) {
+        currentPage--;
+        showPage(currentPage);
+        updatePagination();
+      }
+    });
+    pagination.append(prevButton);
+
+    // Perulangannya
+    for (let i = 1; i <= totalPages; i++) {
+      const span = $("<span></span>").text(i);
+
+      if (i === 1) {
+        span.toggleClass("active");
+      }
+
+      // to set click on page number
+      (function (pageNumber) {
+        span.click(function () {
+          currentPage = pageNumber;
+          showPage(currentPage);
+          updatePagination();
+        });
+      })(i);
+
+      pagination.append(span);
+    }
+
+    const nextButton = $(
+      '<button><i class="bx bx-right-arrow-alt"></i></button>'
+    );
+    nextButton.click(function () {
+      if (currentPage < totalPages) {
+        currentPage++;
+        showPage(currentPage);
+        updatePagination();
+      }
+    });
+    pagination.append(nextButton);
+
+    updatePagination();
+  }
+
+// func update ketika di click
+  function updatePagination() {
+    const spans = pagination.find("span");
+    spans.removeClass("active");
+    spans.eq(currentPage - 1).addClass("active");
+
+    if (currentPage === 1) {
+      pagination
+        .find(".bx-left-arrow-alt")
+        .parent("button")
+        .prop("disabled", true);
+    } else {
+      pagination
+        .find(".bx-left-arrow-alt")
+        .parent("button")
+        .prop("disabled", false);
+    }
+    if (currentPage === totalPages) {
+      pagination
+        .find(".bx-right-arrow-alt")
+        .parent("button")
+        .prop("disabled", true);
+    } else {
+      pagination
+        .find(".bx-right-arrow-alt")
+        .parent("button")
+        .prop("disabled", false);
+    }
+  }
+
+  showPage(currentPage);
+  createPaginationButtons();
 });
