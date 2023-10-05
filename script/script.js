@@ -496,7 +496,7 @@ $(document).ready(function () {
     updatePagination();
   }
 
-// func update ketika di click
+  // func update ketika di click
   function updatePagination() {
     const spans = pagination.find("span");
     spans.removeClass("active");
@@ -528,4 +528,82 @@ $(document).ready(function () {
 
   showPage(currentPage);
   createPaginationButtons();
+
+  // Image Upload Props
+  const imageResult = $(".image-result");
+  const inputFile = $("#file");
+
+  imageResult.on("click", function () {
+    inputFile.click();
+  });
+
+  inputFile.on("change", function () {
+    const image = this.files[0];
+    if (image.size < 5000000) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const img = $("<img>");
+        img.attr("src", reader.result);
+        imageResult.find("img").remove();
+        imageResult.append(img);
+        imageResult.addClass("active");
+        imageResult.attr("data-img", image.name);
+      };
+      reader.readAsDataURL(image);
+    } else {
+      alert("Image size must be less than 5MB");
+    }
+  });
+
+  // Filter
+  $("[data-target]").click(function () {
+    var targetId = $(this).attr("data-target");
+    $("form.content-scroll").removeClass("active");
+    $(".btn-filter i.bx-chevron-down").removeClass("rotated");
+
+    $(targetId).addClass("active");
+    $(this).find("i.bx-chevron-down").addClass("rotated");
+  });
+
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest("[data-target], .content-scroll").length) {
+      $("form.content-scroll").removeClass("active");
+      $(".btn-filter i.bx-chevron-down").removeClass("rotated");
+    }
+  });
+
+
+  // Default filter
+       $(".filter-sort").click(function () {
+        $("#sortDropdown").toggle();
+    });
+
+    $(".sort-select p[data-value]").click(function () {
+        var selectedValue = $(this).data("value");
+        $(".selected-option").text(selectedValue);
+        $("#sortDropdown").hide();
+    });
+
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest(".filter-sort").length) {
+            $("#sortDropdown").hide();
+        }
+    });
+
+    // Filter Mobile
+  
+    $(".filter-content #input-checked").hide();
+
+    $(".filter-content .title").click(function () {
+        $(this).siblings("#input-checked").toggle();
+
+        var icon = $(this).find("i.bx");
+        icon.toggleClass("bxs-chevron-up");
+        icon.toggleClass("bxs-chevron-down");
+    });
+
+
+
+
+
 });

@@ -65,7 +65,7 @@
                 </button>
 
                 <div class="wishlist">
-                    <a href="page/wishlist.html"><i class='bx bx-heart'></i></a>
+                    <a href="wishlist.html"><i class='bx bx-heart'></i></a>
                 </div>
 
                 <div class="cart" id="notification">
@@ -282,7 +282,7 @@
     <div class="main-conteiner">
         <h2 class="product-title">Recomendations Freelance Service</h2>
 
-        <div class="product-wrapper">
+        <div class="product-wrapper" id="productWrapper">
 
             <div class="product-content">
                 <div class="img-poster">
@@ -290,7 +290,7 @@
                         <i class='bx bx-heart'></i>
                     </div>
 
-                    <img src="../resource/image/Workpal-freelanceImg/1.png" alt="FrontEnd Freelance" class="slide-img">
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/1.png" alt="FrontEnd Freelance" class="slide-img"></a>
 
                 </div>
                 <div class="product-card">
@@ -323,7 +323,7 @@
                     <div class="whistlist-icon">
                         <i class='bx bx-heart'></i>
                     </div>
-                    <img src="../resource/image/Workpal-freelanceImg/4.png" alt="Website Freelance" class="slide-img">
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/4.png" alt="Website Freelance" class="slide-img"></a>
 
                 </div>
                 <div class="product-card">
@@ -356,7 +356,7 @@
                     <div class="whistlist-icon">
                         <i class='bx bx-heart'></i>
                     </div>
-                    <img src="../resource/image/Workpal-freelanceImg/2.png" alt="FrontEnd Freelance" class="slide-img">
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/2.png" alt="FrontEnd Freelance" class="slide-img"></a>
 
                 </div>
                 <div class="product-card">
@@ -389,7 +389,7 @@
                     <div class="whistlist-icon">
                         <i class='bx bx-heart'></i>
                     </div>
-                    <img src="../resource/image/Workpal-freelanceImg/3.png" alt="FrontEnd Freelance" class="slide-img">
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/3.png" alt="FrontEnd Freelance" class="slide-img"></a>
 
                 </div>
                 <div class="product-card">
@@ -629,12 +629,21 @@
 
                             <div class="input-wishlist">
                                 <label for="description" class="wishlist-label">Description</label>
-                                <textarea name="description" id="description" cols="30" rows="10" class="textarea-control" placeholder="For Example (Smart AI Maker for our App ecosystem)"></textarea>
+                                <textarea name="description" id="description" cols="20" rows="8" class="textarea-control" placeholder="For Example (Smart AI Maker for our App ecosystem)"></textarea>
+                            </div>
+
+                            <div class="input-wishlist">
+                                    <input type="file" id="file" accept="image/*" hidden/>
+                                    <button type="button" class="image-result" data-img="">
+                                        <i class='bx bxs-cloud-upload upload-icon'></i>
+                                        <h3>Upload Image here</h3>
+                                        <p>Image size must be less than <span>5MB</span></p>
+                                    </button>
                             </div>
 
                             <div class="btn-group">
-                                <button class="btn-cancel close-btn">Cancel</button>
-                                <button class="btn-submit">Create New List</button>
+                                <button type="button" class="btn-cancel close-btn">Cancel</button>
+                                <button type="submit" class="btn-submit">Create New List</button>
                             </div>
                         </form>
                 </div>

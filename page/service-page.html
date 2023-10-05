@@ -289,22 +289,256 @@
     <div class="filter-wrapper">
         <div class="filter-content">
             <div class="left-content-filter">
-                <button class="btn-filter">
+                <button class="btn-filter-sort modal-show" data-modal-target="modals-filter">
+                    <i class='bx bx-slider-alt'></i>
+                    <span>Filter</span>
+                </button>
+                <button class="btn-filter" data-target="#serviceDropdown">
                     <span>Sort By Service</span>
                     <i class='bx bx-chevron-down'></i>
                 </button>
-                <button class="btn-filter">
-                    <span>Sort By Freelance Location</span>
+
+                <form class="content-scroll" id="serviceDropdown">
+                    <div class="title">Sort By service</div>
+                    <div class="content-main">
+                        <div class="service">
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="datasience">
+                                <label for="datasience">DataSience</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="graficdesign">
+                                <label for="graficdesign">Grafic Design</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="vidio">
+                                <label for="vidio">Vidio Editing</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="IOS">
+                                <label for="IOS">IOS developer</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="seo">
+                                <label for="seo">SEO eccommers</label>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+
+                            <hr>
+
+                            <div class="service">
+                                <h5>Service Overing</h5>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="offer">
+                                    <label for="offer">offer Subscription</label>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="service">
+                                <h5>Service Includes</h5>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="design">
+                                    <label for="design">Design</label>
+                                </div>
+
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="source">
+                                    <label for="source">Source Code</label>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="dataSience">
+                                    <label for="dataSience">dataSience</label>
+                                </div>
+
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="Education">
+                                    <label for="Education">Education</label>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="Backline">
+                                    <label for="Backline">Backline Analitic</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button type="reset" class="clear">Clear</button>
+                        <button class="apply">Apply</button>
+                    </div>
+                </form>
+
+
+                <button class="btn-filter" data-target="#freelanceDetail">
+                    <span>Sort By Freelance Detail</span>
                     <i class='bx bx-chevron-down'></i>
                 </button>
-                <button class="btn-filter">
+
+                <form class="content-scroll" id="freelanceDetail">
+                    <div class="title">Sort By Freelance Detail</div>
+                    <div class="content-main">
+                        <div class="service">
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="level1">
+                                <label for="level1">Level 1</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="level new">
+                                <label for="level new">Level New</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="levelpro">
+                                <label for="levelpro">Level Pro</label>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" name="" id="toprated">
+                                <label for="toprated">Top Rated</label>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+
+                            <hr>
+
+                            <div class="service">
+                                <h5>Freelance availablity</h5>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="online">
+                                    <label for="online">Online Now</label>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="service">
+                                <h5>Freelance Lenguage</h5>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="indo">
+                                    <label for="indo">Indonesian</label>
+                                </div>
+
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="englsh">
+                                    <label for="englsh">English</label>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="rusia">
+                                    <label for="rusia">Rusia</label>
+                                </div>
+
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="Hindi">
+                                    <label for="Hindi">Hindi</label>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="Mandarin">
+                                    <label for="Mandarin">Mandarin</label>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="service">
+                                <h5>Freelance Lives</h5>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="Indonesia">
+                                    <label for="Indonesia">Indonesia</label>
+                                </div>
+
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="ingris">
+                                    <label for="ingris">Ingris</label>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="rusian">
+                                    <label for="rusian">Rusia</label>
+                                </div>
+
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="India">
+                                    <label for="India">India</label>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" name="" id="UnitedKingdom">
+                                    <label for="UnitedKingdom">UnitedKingdom</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button type="reset" class="clear">Clear</button>
+                        <button class="apply">Apply</button>
+                    </div>
+                </form>
+
+
+                <button class="btn-filter" data-target="#budget">
                     <span>Sort By Budget</span>
                     <i class='bx bx-chevron-down'></i>
                 </button>
-                <button class="btn-filter">
+                <form class="content-scroll" id="budget">
+                    <div class="title">Sort By Budget</div>
+                    <div class="content-main">
+                        <div class="service">
+                            <div class="input-text">
+                                <label for="low">Start</label>
+                                <input type="text" placeholder="Lower Budget" name="" id="low">
+                                <i class='bx bx-money'></i>
+                            </div>
+                            <div class="input-text">
+                                <label for="max">Max</label>
+                                <input type="text" placeholder="Max Budget" name="" id="max">
+                                <i class='bx bx-money'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button type="reset" class="clear">Clear</button>
+                        <button class="apply">Apply</button>
+                    </div>
+                </form>
+
+
+                <button class="btn-filter" data-target="#deltime">
                     <span>Sort By Delivery Time</span>
                     <i class='bx bx-chevron-down'></i>
                 </button>
+
+                <form class="content-scroll" id="deltime">
+                    <div class="title">Sort By Delivery Time</div>
+                    <div class="content-main">
+                        <div class="service">
+                            <div class="input-check">
+                                <input type="radio" name="deliverTm" id="ex">
+                                <label for="ex">Express 24 Hours</label>
+
+                            </div>
+                            <div class="input-check">
+                                <input type="radio" name="deliverTm" id="u2day">
+                                <label for="u2day">up to 2 days</label>
+
+                            </div>
+
+                            <div class="input-check">
+                                <input type="radio" name="deliverTm" id="u7day">
+                                <label for="u7day">up to 7 days</label>
+
+                            </div>
+
+                            <div class="input-check">
+                                <input type="radio" name="deliverTm" id="anny">
+                                <label for="anny">Anytime Finish</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button type="reset" class="clear">Clear</button>
+                        <button class="apply">Apply</button>
+                    </div>
+                </form>
+
             </div>
 
             <div class="right-content-filter">
@@ -322,12 +556,12 @@
             <span>available 8,900 freelance service</span>
         </div>
         <button class="filter-sort">
-            Sort By :
-            <select name="" class="sort-select" id="">
-                <option value="">Recomendations</option>
-                <option value="">Best of Sell</option>
-                <option value="">Newest Freelance Service</option>
-            </select>
+            <b> Sort By : <p class="selected-option">Default</p></b>
+            <span class="sort-select" id="sortDropdown">
+                <p data-value="Recomendations">Recomendations</p>
+                <p data-value="Best of Sell">Best of Sell</p>
+                <p data-value="Newest Service">Newest Service</p>
+            </span>
         </button>
     </div>
 
@@ -886,9 +1120,591 @@
                 </div>
             </div>
 
+
+            <!-- Third -->
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/4.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/15.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/9.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/10.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/11.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/12.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/13.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/14.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Mickel Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Fourth -->
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/10.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/20.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/15.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/19.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/18.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/17.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/6.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Rama Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="details/detail-service.html"><img src="../resource/image/Workpal-freelanceImg/8.png"
+                            alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Mickel Dev</h4>
+                        </span>
+                        <p class="level-pro">New Level</p>
+                    </div>
+                    <a href="details/detail-service.html" class="text-box">
+                        call me AI service , I can improve your AI to be better, faster and smarter so Checkout Now.
+
+                    </a>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="pagination" id="pagination"></div>
+
+    </div>
+
+    <div class="wrapper-content">
+
+        <div class="subscribe-wrapper">
+            <div class="subscribe-content-img">
+                <div class="top-text">
+                    <img src="../resource/image/popular/icon.png" alt="">
+                    <span>Vargovic Alder</span>
+                </div>
+                <img src="../resource/image/bg-section/subscribe-pro.png" class="img" alt="">
+                <div class="text-btm">
+                    <span>From $980,00</span>
+                    <p><i class='bx bxs-star'></i> 4.8</p>
+                </div>
+            </div>
+
+            <div class="subscribe-content-form">
+                <h4>Take the first step toward a smarter talent strategy</h4>
+                <form action="">
+                    <div class="form-subscribe">
+                        <input type="text" placeholder="Enter your Email to get Pro..." name="gopro">
+                        <button class="btn-subs-pro"><i class='bx bx-right-arrow-alt'></i></button>
+                    </div>
+                </form>
+                <hr>
+                <span>Find and buy projects from best our Freelance talent <i class='bx bx-brightness-half'></i></span>
+            </div>
+        </div>
 
     </div>
 
@@ -1029,6 +1845,192 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="modal-container" id="modals-filter">
+        <form class="modal-box">
+            <div class="modal-header">
+                <div class="title">
+                    Service Filter <b> .</b>
+                </div>
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="filter-conteiner">
+                    <div class="filter-content">
+                        <div class="title">
+                            <h4>Service Option</h4>
+                            <i class='bx bxs-chevron-up'></i>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="educ">
+                            <label for="educ">Education</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Programing">
+                            <label for="Programing">IT Programing</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Data Sience">
+                            <label for="Data Sience">Data Sience</label>
+                        </div>
+
+                    </div>
+                    <div class="filter-content">
+                        <div class="title">
+                            <h4>Freelance Lives</h4>
+                            <i class='bx bxs-chevron-up'></i>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="indonesia">
+                            <label for="indonesia">indonesia</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="India">
+                            <label for="India">India</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="United State">
+                            <label for="United State">United State</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Australia">
+                            <label for="Australia">Australia</label>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Rusia">
+                            <label for="Rusia">Rusia</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="China">
+                            <label for="China">China</label>
+                        </div>
+                    </div>
+                    <div class="filter-content">
+                        <div class="title">
+                            <h4>Freelance Lenguage</h4>
+                            <i class='bx bxs-chevron-up'></i>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Indonesian">
+                            <label for="Indonesian">Indonesian</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="hiin">
+                            <label for="hiin">Hindi</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="American">
+                            <label for="American">American</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="English">
+                            <label for="English">English</label>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Rusian">
+                            <label for="Rusian">Rusian</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Mandarin">
+                            <label for="Mandarin">Mandarin</label>
+                        </div>
+                    </div>
+                    <div class="filter-content">
+                        <div class="title">
+                            <h4>Budget</h4>
+                            <i class='bx bxs-chevron-up'></i>
+                        </div>
+                        <p class="budget-info" id="input-checked">Our medium price now is on $450 , you can use the
+                            minumum from that price
+                        </p>
+                        <div class="input-group" id="input-checked">
+                            <div class="input-text">
+                                <label for="min">Minimum Price</label>
+
+                                <input type="text" name="" placeholder="999" id="min">
+
+                            </div>
+                            <div class="input-text">
+                                <label for="max">Maximum Price</label>
+
+                                <input type="text" placeholder="9999" name="" id="max">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-content">
+                        <div class="title">
+                            <h4>Delivery Time</h4>
+                            <i class='bx bxs-chevron-up'></i>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Express 24 Hours">
+                            <label for="Express 24 Hours">Express 24 Hours</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="2 days">
+                            <label for="2 days">Up to 2 days</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="7 days">
+                            <label for="7 days">Up to 7 days</label>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="Any Time">
+                            <label for="Any Time">Any Time</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-content">
+                        <div class="title">
+                            <h4>Rating Freelance</h4>
+                            <i class='bx bxs-chevron-up'></i>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="3rating">
+                            <label for="3rating">3+</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="3.5rating">
+                            <label for="3.5rating">3.5+</label>
+                        </div>
+
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="4raitng">
+                            <label for="4raitng">4+</label>
+                        </div>
+                        <div class="input-checked" id="input-checked">
+                            <input type="checkbox" name="" id="4.5+">
+                            <label for="4.5+">4.5+</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="reset" class="btn-reset">Clear</button>
+                    <button type="submit" class="btn-apply">Apply</button>
+                </div>
+            </div>
+        </form>
     </section>
 
 
