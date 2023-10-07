@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="../resource/image/logo-img.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="../resource/image/logo-img.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../resource/image/logo-img.png" sizes="16x16">
+    <link rel="stylesheet" href="../style/core.css">
+    <link rel="stylesheet" href="../style/mobile.css">
+    <link rel="stylesheet" href="../plugins/boxicons-2.0.7/css/boxicons.css">
+    <link rel="stylesheet" href="../style/modals.css">
+    <title>WorkPal | Client Profile</title>
+</head>
+
+<body>
+
+
+    <!-- Start Header -->
+
+    <header class="main-header">
+        <div class="header-wrapper">
+            <div class="logo-workpal">
+                <span class="logo-img">
+                    <a href="../index.html">
+                        <img src="../resource/image/main-logo.png" alt="Logo Image">
+                    </a>
+                </span>
+            </div>
+
+
+
+
+            <nav class="workpal-nav" id="navigation-link" data-visible="false">
+                <ul>
+                    <li class="nav-link">
+                        <a href="about.html" class="text-link">How to Work</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="service-page.html" class="text-link">Hire Freelance</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <span><i class='bx bx-globe'></i> Eng</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../seller-pages/become-freelance.html" class="text-link">Become Freelancer</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="login.html" class="text-link">Sign In</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="icons" id="toogleIcons">
+
+                <button class="toogle-search-btn modal-show" id="toogle-search" data-modal-target="modals-search">
+                    <i class='bx bx-search-alt-2'></i>
+                    <i class='bx bx-x' id="x-search"></i>
+                </button>
+
+                <div class="wishlist">
+                    <a href="wishlist.html"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="cart" id="notification">
+                    <i class='bx bx-bell'></i>
+                </div>
+
+
+                <div class="toogle-nav" id="toogle-nav" aria-expanded="false">
+                    <i class='bx bxs-dashboard'></i>
+                    <i class='bx bx-x sr-auto' id="sr-x"></i>
+                </div>
+
+                <div class="profile">
+                    <a href="profile/client.html"><i class='bx bx-user'></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="notification-show">
+            <div class="notification-header">
+                <div class="left">
+                    <i class='bx bx-bell'></i>
+                </div>
+                <h5>Notitication (3)</h5>
+                <div class="close" id="notif-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+            <div class="notification-body">
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/payment-success.jpg" alt="">
+                        <div class="text-info">
+                            <h4>Workpal Payment Success</h4>
+                            <p>your payment form mr.Smith was done and now the work is being done</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            23 Agust 2023 , 17.00pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/notif.jpg" alt="">
+                        <div class="text-info">
+                            <h4>Checkout your Wishlist</h4>
+                            <p>hire your freelance to work your task and job</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            24 september 2023 , 1.00pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notif-content">
+                    <div class="left-notif">
+                        <img src="../../resource/image/bg-section/notif1 (2).jpg" alt="">
+                        <div class="text-info">
+                            <h4>Become a freelance ?</h4>
+                            <p>Try to join us for easly have job and work and got client arround the country</p>
+                        </div>
+                    </div>
+                    <div class="right-notif">
+                        <button class="btn-delete"><i class='bx bx-trash'></i></button>
+                        <div class="time">
+                            30 october 2023 , 16.00pm
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-notif">
+                <div class="setting">
+                    <i class='bx bx-volume-full' id="footer-notif"></i>
+                    <p id="sound-text">Sound</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Menu -->
+        <div class="category-menu" id="categoryMenu">
+
+            <div class="category-menu-wrapper">
+                <div class="prev" id="prevNav">
+                    <i class='bx bxs-chevron-left'></i>
+                </div>
+                <ul>
+                    <li class="nav-link">
+                        <a href="category/category.html">Digital Marketing</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Grafic & Design</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Data Sience</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Programing & Tech</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Business</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Animation</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Writer & Translater</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Music & Audio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">AI Service</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Artis Voice</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category/category.html">Logo Maker</a>
+                    </li>
+
+                </ul>
+
+                <div class="next" id="nextNav">
+                    <i class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Category Menu -->
+    </header>
+    <!-- End Header -->
+
+
+    <div class="client-profile-wrapper">
+        <div class="bg-profile">
+            <img src="../resource/image/bg-section/cbg.webp" alt="">
+            <button class="btn-change-cover">
+                <i class='bx bx-camera'></i>
+                <span>Change Cover</span>
+            </button>
+        </div>
+        <div class="client-simemenu-wrapper">
+            <div class="client-side-menu">
+                <div class="content-img">
+                    <div class="active">
+                        <i class='bx bxl-react'></i>
+                        <p>Online</p>
+                    </div>
+                    <img src="../resource/image/bg-section/Desain tanpa judul (34).png" alt="">
+                    <i class='bx bxs-camera camera'></i>
+                </div>
+                <div class="name">
+                    <h4>Marshal Jeremy</h4>
+                    <span>@Radev100</span>
+                </div>
+
+                <div class="description">
+                    <div class="from">
+                        <div class="right">
+                            <i class='bx bx-map'></i>
+                            <p>From</p>
+                        </div>
+                        <div class="left">
+                            <span>Indonesia</span>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="right">
+                            <i class='bx bx-user-pin'></i>
+                            <p>Join Since</p>
+                        </div>
+                        <div class="left">
+                            <span>Desc 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="public-profile">
+                        <span class="title">View Public Profile</span>
+                        <div class="input-link">
+                            <a href="#">https://app.workpal/client/profile/oauth/27761uue98283/</a>
+                            <i class='bx bx-copy-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-menu-profile">
+                <div class="header-link">
+                    <div class="link-sub active" data-tab="account-setting">
+                        <a href="#">Account Setting</a>
+                    </div>
+                    <div class="link-sub" data-tab="notification-subs-tab">
+                        <a href="#">Notification</a>
+                    </div>
+                    <div class="link-sub" data-tab="general">
+                        <a href="#">General</a>
+                    </div>
+                </div>
+
+                <div class="subs-menu-content-show">
+                    <div class="subs-acount-setting" id="account-setting">
+                        <form action="">
+                            <div class="form-wrapper">
+                                <div class="form-control">
+                                    <label for="name">First Name</label>
+                                    <input type="text" value="Mashal" class="input-control" id="name">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" value="Jemermy" class="input-control" id="lastname">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" value="0863262882" class="input-control" id="phone">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="email">Email</label>
+                                    <input type="text" value="jeremey@gmail.com" class="input-control" id="email">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="Country">Country</label>
+                                    <input type="text" value="Indonesia" class="input-control" id="Country">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="Postal Code">Postal Code</label>
+                                    <input type="text" value="8903" class="input-control" id="Postal Code">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="description">Description</label>
+                                    <textarea name="" class="area-control" id="description" cols="30"
+                                        rows="10">Im Here to Find Freelance to finish my job task.</textarea>
+                                </div>
+                            </div>
+
+                            <div class="footer">
+                                <div class="btn-group">
+                                    <button type="reset" class="btn-reset">Reset</button>
+                                    <button class="btn-submit">Update</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="subs-notification" id="notification-subs-tab">
+                        <div class="title">
+                            <div class="left">
+                                <h3>Notification Settings</h3>
+                                <p>Turn on the Toogle Swtich to get all new notification of use.</p>
+                            </div>
+                            <div class="right">
+                                <div class="wrapper-switch">
+                                    <label class="switch">
+                                        <input type="checkbox" data-target="checked-text">
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                    <label for="checkbox-check" id="checked-text" class="text">Disabled</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="notification-center">
+                            <div class="notif-content-center">
+                                <img src="../resource/image/Workpal-freelanceImg/16.png" alt="">
+                                <div class="text">
+                                    <h5>Payment Success</h5>
+                                    <p>Dear Marshal Jeremy,
+
+                                        We are delighted to inform you that your payment has been successfully
+                                        processed.
+                                        Your transaction ID is #[Transaction ID], and the amount of [Payment Amount] has
+                                        been debited from your account.
+
+                                        Thank you for choosing our services. Your payment confirmation details are as
+                                        follows:
+
+                                        Transaction ID: #9838439439
+                                        Payment Amount: 1,000,000,000,00 USD
+                                        Payment Date: 23 agust 2024 , 4.00AM
+                                        Payment Method: Stripe Payment
+                                        Payment Description : Your Pay for our Freelance IOS developer
+
+                                        Once again, thank you for your payment, and we look forward to serving you in
+                                        the
+                                        future.
+                                    </p>
+
+                                    <div class="footer">
+                                        <span>Sending : <p>12 Agust 2023</p></span>
+                                        <i class='bx bxs-chevron-right'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="notif-content-center">
+                                <img src="../resource/image/Workpal-freelanceImg/11.png" alt="">
+                                <div class="text">
+                                    <h5>Discount Code</h5>
+                                    <p>Dear Marshal Jeremy,
+
+                                        We are excited to offer you an exclusive discount as a token of our appreciation
+                                        for
+                                        your continued support. Your loyalty means the world to us, and we want to
+                                        express
+                                        our gratitude.
+
+                                        Here are the details of your special discount:
+
+                                        Discount Code: 0983822
+                                        Discount Percentage: 50%
+                                        Valid From: 25 November 2023
+                                        Valid Until: 30 December 2023
+                                        To redeem this discount, simply enter the provided discount code during the
+                                        checkout
+                                        process on our website or at our store. You can use this discount on your next
+                                        purchase, making it the perfect time to treat yourself or shop for your favorite
+                                        items.
+                                        Thank you once again for being a valued customer. We hope you enjoy your
+                                        shopping
+                                        experience with us and take advantage of this special offer.
+                                    </p>
+                                    <div class="footer">
+                                        <span>Sending : <p>22 september 2023</p></span>
+                                        <i class='bx bxs-chevron-right'></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subs-general" id="general">
+                        <div class="setting-manage">
+                            <div class="left">
+                                <h4>Email Notification</h4>
+                                <span>Allowed Us to send you a notification on your Inbox Email form Up to date
+                                    Informations
+                                    about Freelance Service and more Greate Informations</span>
+                            </div>
+                            <div class="right">
+                                <div class="wrapper-switch">
+                                    <label class="switch">
+                                        <input type="checkbox" data-target="checked-text-email">
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                    <label for="checkbox-check" id="checked-text-email" class="text">Disabled</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="setting-manage">
+                            <div class="left">
+                                <h4>Keep Connected</h4>
+                                <span>On the button to make still connect with Us and got forever up to date
+                                    Information</span>
+                            </div>
+                            <div class="right">
+                                <div class="wrapper-switch">
+                                    <label class="switch">
+                                        <input type="checkbox" data-target="checked-text-conected">
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                    <label for="checkbox-check" id="checked-text-conected" class="text">Disabled</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        
+                        <div class="setting-manage">
+                            <div class="left">
+                                <h4>Privacy & Secyurity</h4>
+                                <span>Keep this On for make your Account is safety and don't worry for Cheating data ,
+                                    all
+                                    is safe </span>
+                            </div>
+                            <div class="right">
+                                <div class="wrapper-switch">
+                                    <label class="switch">
+                                        <input type="checkbox" data-target="checked-text-privacy">
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                    <label for="checkbox-check" id="checked-text-privacy" class="text">Disabled</label>
+                                </div>
+                            </div>
+                        </div>
+                    <button class="add-more-account"><i class='bx bx-plus'></i> Add New Account</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <p id="to-top" class="to-top">
+        <a href="#top" class="top-link"><i class='bx bx-arrow-to-top'></i></a>
+    </p>
+
+
+
+    <div class="section-footer">
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="quick-link">
+                    <h4>WorkPal Categories</h4>
+                    <li class="footer-link">
+                        <a href="">Data Sience</a>
+                        <a href="">Digital Marketing</a>
+                        <a href="">Grafic & Design</a>
+                        <a href="">Bussiness</a>
+                        <a href="">Programing Tech</a>
+                        <a href="">Translater</a>
+                        <a href="">Digital Marketing</a>
+                        <a href="">AI Service</a>
+                        <a href="">Music & Audio <p class="btn-small-rounded">New</p> </a>
+                    </li>
+                </div>
+
+                <div class="quick-link">
+                    <h4>About Us</h4>
+                    <li class="footer-link">
+                        <a href="">FAQ / Help</a>
+                        <a href=""> How to Work</a>
+                        <a href="">Our Teams</a>
+                    </li>
+                </div>
+
+
+                <div class="quick-link">
+                    <h4>Connect with Us</h4>
+                    <li class="footer-link">
+                        <a href="" class="social-link"><i class='bx bxl-instagram instagram'></i> Instagram</a>
+                        <a href="" class="social-link"> <i class='bx bxl-facebook-circle facebook'></i> Facebook</a>
+                        <a href="" class="social-link"><i class='bx bxl-linkedin-square linkedin'></i> Linkedin</a>
+                        <a href="" class="social-link"><i class='bx bxl-twitter twitter'></i> Twitter</a>
+                        <a href="" class="social-link"><i class='bx bxl-pinterest pintrest'></i> Pintrest</a>
+                    </li>
+                </div>
+
+                <div class="quick-link">
+                    <div class="top-content">
+                        <h4>Call</h4>
+                        <a href=""><i class='bx bx-envelope'></i> workpalcompany@ac.id</a>
+                        <a href=""><i class='bx bxs-phone'></i> +123456789</a>
+                    </div>
+
+                    <div class="bottom-content">
+                        <h4>Security</h4>
+                        <img src="../resource/image/security/BCA.webp" alt="" class="security">
+                        <img src="../resource/image/security/master-card.png" alt="" class="security">
+                        <img src="../resource/image/security/visa.png" alt="" class="security">
+                        <img src="../resource/image/security/ssl.jpg" alt="" class="security">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <a href="../index.html"><img src="../resource/image/main-logo.png" alt="" class="logo"></a>
+                <p>&copy; 2023 All right and reserved by WorkPal</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modals -->
+
+    <section class="modal-container" id="modals-search">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="search-container">
+                    <form action="#" method="#" class="search-form">
+                        <input type="search" name="search" id="search"
+                            placeholder="What Freelance service are you looking for now..." autocomplete="off"
+                            class="search-input">
+                        <button class="search-btn"><i class='bx bx-search'></i></button>
+                    </form>
+
+                    <div class="result-search-box">
+                        <ul>
+                            <li class="content-result-search">
+                                Freelancer Web Design <div class="btn-popular">Popular</div>
+                            </li>
+                            <li class="content-result-search">
+                                Best Freelancer for Logo Maker
+                            </li>
+                            <li class="content-result-search">
+                                Cheaper Freelance
+                            </li>
+                            <li class="content-result-search">
+                                Freelancer with best Rating
+                            </li>
+                            <li class="content-result-search">
+                                SEO for Website Enggine
+                            </li>
+                            <li class="content-result-search">
+                                How to fix Ai bugs <div class="btn-popular">Popular</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="not-found">Result Not Found</p>
+
+                    <div class="history-search">
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p> Ai Maker with Python</p>
+                        </div>
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p>Profesional Photografer</p>
+                        </div>
+
+                        <div class="history">
+                            <i class='bx bx-x'></i>
+                            <p>Developer Eccommers Apps</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="modal-container" id="share-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="title">
+                    Share to Your Friends <b> .</b>
+                </div>
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="share-modal">
+                    <div class="share-content">
+                        <div class="btn-share">
+                            <i class='bx bxl-facebook-circle facebook'></i>
+                            Facebook
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bxl-whatsapp whatsapp'></i>
+                            Whatsapp
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bxl-linkedin-square linkedin'></i>
+                            Linkedin
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bxl-twitter twitter'></i>
+                            Twitter
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bx-link-alt link-alt'></i>
+                            Share Link
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-container" id="create-wishlist">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="title">
+                    Create New WishList <b> .</b>
+                </div>
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="wishlist-container">
+                    <form action="#" class="input-form">
+                        <div class="input-wishlist">
+                            <label for="title" class="wishlist-label">Title</label>
+                            <input type="text" name="title" id="title" class="textinput-control"
+                                placeholder="Field your Wishlist Title...">
+                        </div>
+
+                        <div class="input-wishlist">
+                            <label for="description" class="wishlist-label">Description</label>
+                            <textarea name="description" id="description" cols="20" rows="8" class="textarea-control"
+                                placeholder="For Example (Smart AI Maker for our App ecosystem)"></textarea>
+                        </div>
+
+                        <div class="input-wishlist">
+                            <input type="file" id="file" accept="image/*" hidden />
+                            <button type="button" class="image-result" data-img="">
+                                <i class='bx bxs-cloud-upload upload-icon'></i>
+                                <h3>Upload Image here</h3>
+                                <p>Image size must be less than <span>5MB</span></p>
+                            </button>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn-cancel close-btn">Cancel</button>
+                            <button type="submit" class="btn-submit">Create New List</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End WishList Section -->
+    <script src="../plugins/jquery v3.6.0/jquery.js"></script>
+    <script src="../plugins/smooth-scroll v15.1.3/dist/smooth-scroll.polyfills.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

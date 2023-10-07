@@ -572,38 +572,64 @@ $(document).ready(function () {
     }
   });
 
-
   // Default filter
-       $(".filter-sort").click(function () {
-        $("#sortDropdown").toggle();
-    });
+  $(".filter-sort").click(function () {
+    $("#sortDropdown").toggle();
+  });
 
-    $(".sort-select p[data-value]").click(function () {
-        var selectedValue = $(this).data("value");
-        $(".selected-option").text(selectedValue);
-        $("#sortDropdown").hide();
-    });
+  $(".sort-select p[data-value]").click(function () {
+    var selectedValue = $(this).data("value");
+    $(".selected-option").text(selectedValue);
+    $("#sortDropdown").hide();
+  });
 
-    $(document).on("click", function (e) {
-        if (!$(e.target).closest(".filter-sort").length) {
-            $("#sortDropdown").hide();
-        }
-    });
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".filter-sort").length) {
+      $("#sortDropdown").hide();
+    }
+  });
 
-    // Filter Mobile
-  
-    $(".filter-content #input-checked").hide();
+  // Filter Mobile
 
-    $(".filter-content .title").click(function () {
-        $(this).siblings("#input-checked").toggle();
+  $(".filter-content #input-checked").hide();
 
-        var icon = $(this).find("i.bx");
-        icon.toggleClass("bxs-chevron-up");
-        icon.toggleClass("bxs-chevron-down");
-    });
+  $(".filter-content .title").click(function () {
+    $(this).siblings("#input-checked").toggle();
+
+    var icon = $(this).find("i.bx");
+    icon.toggleClass("bxs-chevron-up");
+    icon.toggleClass("bxs-chevron-down");
+  });
+
+  // Tabs Profile
+  $(".header-link .link-sub").on("click", function () {
+    $(".link-sub").removeClass("active");
+
+    $(this).addClass("active");
+
+    const tabId = $(this).data("tab");
+
+    $(".subs-menu-content-show > div").hide();
+
+    $("#" + tabId).show();
+  });
+
+  const defaultTabId = $(".header-link .link-sub.active").data("tab");
+  $(".subs-menu-content-show > div")
+    .not("#" + defaultTabId)
+    .hide();
 
 
 
+   $('.switch input[type="checkbox"]').change(function() {
+    var targetLabel = $(this).closest('.wrapper-switch').find('.text');
+    if ($(this).is(':checked')) {
+        targetLabel.text('Enabled');
+    } else {
+        targetLabel.text('Disabled');
+    }
+
+});
 
 
 });
