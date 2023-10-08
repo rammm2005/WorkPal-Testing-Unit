@@ -372,6 +372,105 @@
         color: white;
     }
 
+    .client-simemenu-wrapper {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+
+
+   
+
+    .client-profile-wrapper .open-toogle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 3rem;
+        color: var(--text-black);
+        margin-top: 1.5rem;
+        background-color: var(--bg-box);
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        align-items: center;
+        transition: all ease .6s;
+    }
+    .client-profile-wrapper .open-toogle .profile-img{
+        position: relative;
+        max-width: 4rem;
+        object-fit: cover;
+        border: 1px solid hsl(136, 72%, 35%);
+        background-position: center;
+        border-radius: 999px;
+    }
+
+    .client-side-menu .content-img .camera{
+        top:27%;
+        margin-left: 12rem;
+    }
+
+
+    .client-simemenu-wrapper .content-menu-profile {
+        width: 100%;
+        top: 0;
+        right: 0;
+        margin-top: 1rem;
+        position: absolute;
+        flex-direction: column; 
+    }
+
+    .subs-acount-setting form .form-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subs-acount-setting form .form-control label{
+        font-size: 1.5rem;
+    }
+
+    .client-simemenu-wrapper .client-side-menu{
+        width: 100%;
+        transform: translateX(-200%);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 0;
+        z-index: 100;
+        right: 0;
+    }
+
+    .client-simemenu-wrapper .client-side-menu.active{
+        max-width: 40rem;
+        transform: translateX(0);
+        position: absolute;
+        display: flex;
+        top:-9rem;
+        left: 0;
+        border-radius: none;
+        flex-direction: column;
+        z-index: 100;
+        transition: all ease-in-out .4s;
+    }
+
+    .notification-center .notif-content-center img{
+        max-width: 50%;
+        object-fit: cover;
+    }
+
+    .notif-content-center .text p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+        max-height: 50vh;
+    }
+   .client-profile-wrapper {
+        height: calc(50vh);
+    }
+
 }
 
 @media(max-width:768px) {
@@ -1616,6 +1715,101 @@
     }
 
 
+    .client-simemenu-wrapper {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+
+
+   
+
+    .client-profile-wrapper .open-toogle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 3rem;
+        color: var(--text-black);
+        margin-top: 1.5rem;
+        background-color: var(--bg-box);
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        align-items: center;
+        transition: all ease .6s;
+    }
+    .client-profile-wrapper .open-toogle .profile-img{
+        position: relative;
+        max-width: 4rem;
+        object-fit: cover;
+        border: 1px solid hsl(136, 72%, 35%);
+        background-position: center;
+        border-radius: 999px;
+    }
+
+    .client-side-menu .content-img .camera{
+        top:27%;
+        margin-left: 12rem;
+    }
+
+
+    .client-simemenu-wrapper .content-menu-profile {
+        width: 100%;
+        top: 0;
+        right: 0;
+        margin-top: 1rem;
+        position: absolute;
+        flex-direction: column; 
+    }
+
+    .subs-acount-setting form .form-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subs-acount-setting form .form-control label{
+        font-size: 1.5rem;
+    }
+
+    .client-simemenu-wrapper .client-side-menu{
+        width: 100%;
+        transform: translateX(-200%);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 0;
+        z-index: 100;
+        right: 0;
+    }
+
+    .client-simemenu-wrapper .client-side-menu.active{
+        max-width: 40rem;
+        transform: translateX(0);
+        position: absolute;
+        display: flex;
+        top:-9rem;
+        left: 0;
+        border-radius: none;
+        flex-direction: column;
+        z-index: 100;
+        transition: all ease-in-out .4s;
+    }
+
+    .notification-center .notif-content-center img{
+        max-width: 50%;
+        object-fit: cover;
+    }
+
+    .notif-content-center .text p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+        max-height: 50vh;
+    }
 
 
 

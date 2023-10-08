@@ -632,4 +632,17 @@ $(document).ready(function () {
 });
 
 
+// Mobile User Profile
+
+  $("#open-toogle").click(function () {
+    $(".client-side-menu").toggleClass("active");
+    if ($(".client-side-menu").hasClass("active")) {
+        $("#open-toogle i").removeClass("bx-menu-alt-left").addClass("bx-x");
+    } else {
+        $("#open-toogle i").removeClass("bx-x").addClass("bx-menu-alt-left");
+    }
+});
+
+     
+
 });
