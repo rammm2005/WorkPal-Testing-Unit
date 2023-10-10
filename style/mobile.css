@@ -2302,4 +2302,20 @@
 }
 
 
+/* Become freelancer */
+.content-main .form-regis .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.content-main .form-regis .form-area textarea{
+    width: 100%;
+}
+
+
 }

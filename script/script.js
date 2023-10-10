@@ -385,6 +385,7 @@ $(document).ready(function () {
 
   toogleNotif.click(function () {
     $(".notification-show").toggleClass("showing");
+    $(".previwe-menu").removeClass("show");
   });
 
   notifClose.click(function () {
@@ -777,5 +778,9 @@ $(document).ready(function () {
     }
   });
 
+  $("#user-icon").click(function () {
+    $(".previwe-menu").toggleClass("show");
+    $(".notification-show").removeClass("showing");
 
+  });
 });
