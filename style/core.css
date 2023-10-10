@@ -6618,7 +6618,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 
-.content-main{
+.content-become{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -6629,7 +6629,7 @@ input[type="search"]::-webkit-search-clear-button {
     position: relative;
 }
 
-.content-main .top-bar-status{
+.content-become .top-bar-status{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -6641,7 +6641,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 
-.content-main .top-bar-status .not-finish{
+.content-become .top-bar-status .not-finish{
     display: block;
     align-items: center;
     width: 100%;
@@ -6649,14 +6649,14 @@ input[type="search"]::-webkit-search-clear-button {
     opacity: .4;
 }
 
-.content-main .top-bar-status span{
+.content-become .top-bar-status span{
     display: block;
     align-items: center;
     width: 100%;
     position: relative;
 }
 
-.content-main .top-bar-status span h4{
+.content-become .top-bar-status span h4{
     position: relative;
     display: flex;
     gap: 5px;
@@ -6666,7 +6666,7 @@ input[type="search"]::-webkit-search-clear-button {
     color: var(--text-black);
     font-weight:700;
 }
-.content-main .top-bar-status span h4 p{
+.content-become .top-bar-status span h4 p{
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -6710,7 +6710,7 @@ input[type="search"]::-webkit-search-clear-button {
 
 
 
-.content-main .form-regis{
+.content-become .form-regis{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6719,7 +6719,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 
-.content-main .form-regis .title-header{
+.content-become .form-regis .title-header{
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -6731,21 +6731,21 @@ input[type="search"]::-webkit-search-clear-button {
     position: relative;
 }
 
-.content-main .form-regis .title-header h4{
+.content-become .form-regis .title-header h4{
     font-size: 2rem;
     color: var(--text-black);
     font-weight: 600;
     line-height: 1.5;
 }
 
-.content-main .form-regis .title-header span{
+.content-become .form-regis .title-header span{
     font-size: 1.3rem;
     color: var(--text-boldgray);
     font-weight: 500;
     line-height: 1.4;
 }
 
-.content-main .form-regis form{
+.content-become .form-regis form{
     display: flex;
     flex-direction: column;
     background-color: var(--bg-box);
@@ -6757,7 +6757,7 @@ input[type="search"]::-webkit-search-clear-button {
     width: 100%;
 }
 
-.content-main .form-regis .form-group{
+.content-become .form-regis .form-group{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -6769,21 +6769,21 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 
-.content-main .form-regis .form-group .form-input{
+.content-become .form-regis .form-group .form-input{
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
 }
 
-.content-main .form-regis .form-group .form-input label{
+.content-become .form-regis .form-group .form-input label{
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: .5rem;
     color: var(--text-black);
 }
 
-.content-main .form-regis .form-group .form-input input{
+.content-become .form-regis .form-group .form-input input{
     outline: none;
     border: 1px solid #ccc;
     background-color: var(--bg-box);
@@ -6794,7 +6794,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 
-.content-main .form-regis .form-area{
+.content-become .form-regis .form-area{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -6803,14 +6803,14 @@ input[type="search"]::-webkit-search-clear-button {
 
 
 
-.content-main .form-regis .form-area label{
+.content-become .form-regis .form-area label{
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: .5rem;
     color: var(--text-black);
 }
 
-.content-main .form-regis .form-area textarea{
+.content-become .form-regis .form-area textarea{
     outline: none;
     border: 1px solid #ccc;
     background-color: var(--bg-box);

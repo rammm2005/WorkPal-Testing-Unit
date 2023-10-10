@@ -2303,7 +2303,7 @@
 
 
 /* Become freelancer */
-.content-main .form-regis .form-group{
+.content-become .form-regis .form-group{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2313,7 +2313,7 @@
     margin-bottom: 2rem;
 }
 
-.content-main .form-regis .form-area textarea{
+.content-become .form-regis .form-area textarea{
     width: 100%;
 }
 
