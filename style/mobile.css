@@ -479,6 +479,112 @@
         height: calc(50vh);
     }
 
+
+
+    
+    
+/* Service detail */
+.sub-link-wrapper .wishlist-heart{
+    background-repeat: no-repeat;
+    background-position: -30px 0;
+    display: block;
+    height: 28px;
+    width: 30px;
+}
+
+
+.service-detail-img .img-right .show-all-img {
+    width: 80%;
+    bottom: 0rem;
+}
+
+
+.service-detail-img .img-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    align-items: center;
+}
+
+
+.content-service-detail .service-detail-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 1rem;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.service-detail-info .left-content-detail .title-gig h4 {
+    overflow-wrap: break-word; 
+    font-weight: 600;
+    color: var(--text-black);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+
+.service-detail-info .left-content-detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word; 
+    overflow: hidden; 
+}
+
+
+.left-content-detail .title-gig .status-gig {
+    max-width:45%;
+}
+
+.contact-your-freelance .section-profile .btn-message-host{
+    width: 100%;
+}
+
+.left-content-detail .photopolio .freelance-photopolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.photopolio .freelance-photopolio .img-left img {
+    max-width: 40rem;
+}
+
+.photopolio .freelance-photopolio .img-right img {
+    max-width: 17rem;
+}
+
+.reviewer-wrapper{
+    margin-top: 8rem;
+}
+
+.content-review{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem
+}
+.review-content .sort-wrapper{
+    margin-top: 6rem;
+}
+   
+
+
 }
 
 @media(max-width:768px) {
@@ -1194,6 +1300,107 @@
         max-height: 50vh;
     }
 
+
+    
+/* Service detail */
+.sub-link-wrapper .wishlist-heart{
+    background-repeat: no-repeat;
+    background-position: -30px 0;
+    display: block;
+    height: 28px;
+    width: 30px;
+}
+
+
+.service-detail-img .img-right .show-all-img {
+    width: 80%;
+    bottom: 0rem;
+}
+
+
+.service-detail-img .img-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    align-items: center;
+}
+
+
+.content-service-detail .service-detail-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 1rem;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.service-detail-info .left-content-detail .title-gig h4 {
+    overflow-wrap: break-word; 
+    font-weight: 600;
+    color: var(--text-black);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+
+.service-detail-info .left-content-detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word; 
+    overflow: hidden; 
+}
+
+
+.left-content-detail .title-gig .status-gig {
+    max-width:45%;
+}
+
+.contact-your-freelance .section-profile .btn-message-host{
+    width: 100%;
+}
+
+.left-content-detail .photopolio .freelance-photopolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.photopolio .freelance-photopolio .img-left img {
+    max-width: 40rem;
+}
+
+.photopolio .freelance-photopolio .img-right img {
+    max-width: 17rem;
+}
+
+.reviewer-wrapper{
+    margin-top: 8rem;
+}
+
+.content-review{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem
+}
+.review-content .sort-wrapper{
+    margin-top: 6rem;
+}
    
 
 }
@@ -1928,6 +2135,171 @@
     max-height: 50vh;
 }
 
+
+/* Service detail */
+.sub-link-wrapper .wishlist-heart{
+    background-repeat: no-repeat;
+    background-position: -30px 0;
+    display: block;
+    height: 28px;
+    width: 30px;
+}
+
+
+.service-detail-img .img-right .show-all-img {
+    width: 80%;
+    bottom: 0rem;
+}
+
+
+.service-detail-img .img-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    align-items: center;
+}
+
+
+.content-service-detail .service-detail-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 1rem;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.service-detail-info .left-content-detail .title-gig h4 {
+    overflow-wrap: break-word; 
+    font-weight: 600;
+    color: var(--text-black);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+
+.service-detail-info .left-content-detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word; 
+    overflow: hidden; 
+}
+
+
+.left-content-detail .title-gig .status-gig {
+    max-width:45%;
+}
+
+.contact-your-freelance .section-profile .btn-message-host{
+    width: 100%;
+}
+
+.left-content-detail .photopolio .freelance-photopolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.photopolio .freelance-photopolio .img-left img {
+    max-width: 25rem;
+}
+
+.photopolio .freelance-photopolio .img-right img {
+    max-width: 11rem;
+}
+
+.reviewer-wrapper{
+    margin-top: 8rem;
+}
+
+.content-review{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem
+}
+.review-content .sort-wrapper{
+    margin-top: 6rem;
+}
+
+
+/* End Service Detail */
+
+
+
+/* Checkout */
+
+.billing-header img{
+    display: none;
+    font-size: 1rem !important;
+}
+
+.billing-header .status-payment{
+    gap: 10px;
+}
+.billing-header .status-payment span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.billing-header .bxs-chevrons-right{
+    display: none;
+}
+
+.card-payment {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    padding: 5rem 5%;
+    margin-top: 9rem;
+}
+
+.right-payment{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    position: relative;
+    width: 100%;
+    align-items: center;
+    right: 0;
+    background-color: var(--bg-box);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 5px;
+    order: -1;
+    overflow: hidden;
+
+}
+
+.right-payment .top-header{
+    display: flex;
+    width: 100%;
+}
+
+.right-payment .top-header span{
+    width: 100%;
+    text-wrap: wrap;
+    position: relative;
+    display: flex;
+}
 
 
 }

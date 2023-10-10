@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="../resource/image/logo-img.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="../resource/image/logo-img.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../resource/image/logo-img.png" sizes="16x16">
+    <link rel="stylesheet" href="../style/core.css">
+    <link rel="stylesheet" href="../style/mobile.css">
+    <link rel="stylesheet" href="../plugins/boxicons-2.0.7/css/boxicons.css">
+    <link rel="stylesheet" href="../style/modals.css">
+    <title>WorkPal | Checkout Payment</title>
+</head>
+
+<body>
+
+
+    <div class="billing-header">
+        <img src="../resource/image/main-logo.png" alt="">
+        <div class="status-payment">
+            <span>
+                <i class='bx bxs-check-circle'></i>
+                <a href="../page/details/detail-service.html">Order Detail</a>
+            </span>
+            <i class='bx bxs-chevrons-right'></i>
+            <span>
+                <p>2</p>
+                <a href="javascript:void(0)" class="active">Payment Billing</a>
+            </span>
+            <i class='bx bxs-chevrons-right'></i>
+            <span>
+                <p>3</p>
+                <a href="javascript:void(0)" class="not-active">Submit & Finish</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="card-payment">
+        <div class="left-payment">
+
+            <div class="header-payment-t">
+                <div class="title">
+                    <h5>
+                        Billing Address
+                    </h5>
+                    <button class="edit">
+                        <i class='bx bx-edit-alt'></i>
+                        Edit
+                    </button>
+                </div>
+                <div class="billing-form">
+                    <div class="form-input">
+                        <label for="">Username</label>
+                        <input type="text" value="Rama Dita" readonly>
+                    </div>
+                    <div class="form-input">
+                        <label for="">VAT Number</label>
+                        <input type="text" value="938843900392" readonly>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="payment-method">
+                <div class="title">
+                    <h5>
+                        Payment Method
+                    </h5>
+                </div>
+
+                <div class="payment-selector" id="images-payment">
+                    <div class="img">
+                        <img src="../resource/image/master-card-removebg-preview.png" alt="">
+                        <input type="checkbox" name="payment" id="master-card">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+
+                    <div class="img">
+                        <img src="../resource/image/pay-pal-removebg-preview.png" alt="">
+                        <input type="checkbox" name="payment" id="pay-pal">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+
+                    <div class="img">
+                        <img src="../resource/image/BCA-removebg-preview.png" alt="">
+                        <input type="checkbox" name="payment" id="BCA">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+
+                    <div class="img">
+                        <img src="../resource/image/visa-removebg-preview.png" alt="">
+                        <input type="checkbox" name="payment" id="visa">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+                </div>
+
+                <form action="" class="form-payment">
+                    <div class="form-input">
+                        <label for="">CardHolder Name</label>
+                        <input type="text" value="Rama Dita" readonly>
+                    </div>
+
+                    <div class="group-form">
+                        <div class="form-input">
+                            <label for="">Card Number</label>
+                            <input type="text" value="983 939849 13627" readonly>
+                        </div>
+                        <div class="form-input">
+                            <label for="">Date</label>
+                            <input type="date" name="date" value="2023-12-12" readonly>
+                        </div>
+                        <div class="form-input">
+                            <label for="">CCV<i class='bx bxs-info-circle'></i></label>
+                            <input type="text" value="40298" readonly>
+                        </div>
+                    </div>
+
+                    <div class="credit-card-status">
+                        <span>
+                            <i class='bx bxs-info-circle'></i>
+                            <p>Credit card payments may take up to 3h to be Processed</p>
+                        </span>
+                    </div>
+
+                    <div class="checked-box">
+                        <input type="checkbox" name="remember" id="payment-check">
+                        <label for="payment-check">Save my payment details for future purchases</label>
+                    </div>
+
+                    <hr>
+
+                    <div class="recuring-payment">
+                        <div class="top">
+                            <h6>Enebled Recurring Payment</h6>
+                            <div class="right-content-filter">
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="checked">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>Never run out of Balance when sending your Purchase freelance , and you can change
+                                these settings any time</span>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        <div class="right-payment">
+
+            <div class="top-header">
+                <img src="../resource/image/Workpal-freelanceImg/18.png" alt="">
+                <span>I will make Meachine learning and deep learning data sience , data Analyst Python projects</span>
+            </div>
+
+            <div class="midle-payment">
+                <div class="first">
+                    <h5>Premium Pro</h5>
+                    <span>$700</span>
+                </div>
+
+                <div class="include">
+                    <span><i class='bx bx-check'></i>13 configured goals included</span>
+                    <span><i class='bx bx-check'></i>Visualize results</span>
+                    <span><i class='bx bx-check'></i>Meachine Learning</span>
+                    <span><i class='bx bx-check'></i>MChart Data</span>
+                    <span><i class='bx bx-check'></i>AI repair for Premium</span>
+                </div>
+
+                <div class="service-fee">
+                    <span>Service Fee</span>
+
+                    <p>$90</p>
+                </div>
+
+                <div class="total">
+                    <div class="top">
+                        <h5>Total</h5>
+                        <span>$790</span>
+                    </div>
+                    <div class="bottom">
+                        <h5>Total delivery time</h5>
+                        <span>25 days</span>
+                    </div>
+                </div>
+
+                <button class="btn-confirm-pay">Confirm & Pay Payment</button>
+
+                <div class="secure">
+                    <i class='bx bxs-lock'></i>
+                    <p>SSL secure Payment Key</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="../plugins/jquery v3.6.0/jquery.js"></script>
+    <script src="../plugins/smooth-scroll v15.1.3/dist/smooth-scroll.polyfills.js"></script>
+    <script src="../../plugins/Fancybox v3/source/jquery.fancybox.js"></script>
+    <script src="../../plugins/Fancybox v3/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

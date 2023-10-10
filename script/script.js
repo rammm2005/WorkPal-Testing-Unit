@@ -281,10 +281,10 @@ $(document).ready(function () {
   $(".modal-container").hide();
   $(".modal-show").click(function () {
     const targetModal = $(this).attr("data-modal-target");
-    $("#" + targetModal).addClass("active");
+    $("#" + targetModal).toggleClass("active");
     $(".modal-container").show();
     $(".modal-container").css("display", "flex");
-    $("body").addClass("active");
+    $("body").toggleClass("active");
   });
 
   $(".close-btn").click(function () {
@@ -461,7 +461,7 @@ $(document).ready(function () {
     });
     pagination.append(prevButton);
 
-    // Perulangannya
+    // for
     for (let i = 1; i <= totalPages; i++) {
       const span = $("<span></span>").text(i);
 
@@ -619,30 +619,163 @@ $(document).ready(function () {
     .not("#" + defaultTabId)
     .hide();
 
-
-
-   $('.switch input[type="checkbox"]').change(function() {
-    var targetLabel = $(this).closest('.wrapper-switch').find('.text');
-    if ($(this).is(':checked')) {
-        targetLabel.text('Enabled');
+  $('.switch input[type="checkbox"]').change(function () {
+    var targetLabel = $(this).closest(".wrapper-switch").find(".text");
+    if ($(this).is(":checked")) {
+      targetLabel.text("Enabled");
     } else {
-        targetLabel.text('Disabled');
+      targetLabel.text("Disabled");
     }
+  });
 
-});
-
-
-// Mobile User Profile
+  // Mobile User Profile
 
   $("#open-toogle").click(function () {
     $(".client-side-menu").toggleClass("active");
     if ($(".client-side-menu").hasClass("active")) {
-        $("#open-toogle i").removeClass("bx-menu-alt-left").addClass("bx-x");
+      $("#open-toogle i").removeClass("bx-menu-alt-left").addClass("bx-x");
     } else {
-        $("#open-toogle i").removeClass("bx-x").addClass("bx-menu-alt-left");
+      $("#open-toogle i").removeClass("bx-x").addClass("bx-menu-alt-left");
     }
-});
+  });
 
-     
+  $("#img-heartlist").click(function () {
+    $("#img-heartlist").toggleClass("active");
+  });
+
+  $("#sort-review").click(function () {
+    $("#show-review-sort").toggleClass("active");
+  });
+
+  // read more
+  const $readMoreToggle = $("#read-more-toggle");
+  const $paragraphs = $("#read-more").find("p,span");
+
+  let isOpen = false;
+
+  function updateText() {
+    if (isOpen) {
+      $paragraphs.show();
+      $readMoreToggle.text("Read Less...");
+    } else {
+      $paragraphs.each(function (index) {
+        if (index > 0) {
+          $(this).hide();
+        }
+      });
+      $readMoreToggle.text("Read More...");
+    }
+  }
+
+  updateText();
+
+  $readMoreToggle.click(function (e) {
+    e.preventDefault();
+    isOpen = !isOpen;
+    updateText();
+  });
+
+  // Fancy Box Javascript
+
+  $(".fancybox").fancybox();
+
+  $(".fancybox-effects-a").fancybox({
+    helpers: {
+      title: {
+        type: "outside",
+      },
+      overlay: {
+        speedOut: 0,
+      },
+    },
+  });
+
+  $(".fancybox-effects-b").fancybox({
+    openEffect: "none",
+    closeEffect: "none",
+
+    helpers: {
+      title: {
+        type: "over",
+      },
+    },
+  });
+
+  $(".fancybox-effects-c").fancybox({
+    wrapCSS: "fancybox-custom",
+    closeClick: true,
+
+    openEffect: "none",
+
+    helpers: {
+      title: {
+        type: "inside",
+      },
+      overlay: {
+        css: {
+          background: "rgba(238,238,238,0.85)",
+        },
+      },
+    },
+  });
+
+  $(".fancybox-effects-d").fancybox({
+    padding: 0,
+
+    openEffect: "elastic",
+    openSpeed: 150,
+
+    closeEffect: "elastic",
+    closeSpeed: 150,
+
+    closeClick: true,
+
+    helpers: {
+      overlay: null,
+    },
+  });
+
+  $(".fancybox-buttons").fancybox({
+    openEffect: "none",
+    closeEffect: "none",
+
+    prevEffect: "none",
+    nextEffect: "none",
+
+    closeBtn: false,
+
+    helpers: {
+      title: {
+        type: "inside",
+      },
+      buttons: {},
+    },
+
+    afterLoad: function () {
+      this.title =
+        "Image " +
+        (this.index + 1) +
+        " of " +
+        this.group.length +
+        (this.title ? " - " + this.title : "");
+    },
+  });
+
+  $('#images-payment .img input[type="checkbox"]').change(function () {
+    var $checkbox = $(this);
+    var $image = $checkbox.siblings("img");
+
+    $("#images-payment .img img").removeClass("active");
+    $('#images-payment .img input[type="checkbox"]').prop("checked", false);
+    $(this).prop("checked", true);
+
+    if ($checkbox.is(":checked")) {
+      $image.addClass("active");
+    } else {
+      $image.removeClass("active");
+      $checkbox.prop("checked", false);
+    }
+  });
+
 
 });

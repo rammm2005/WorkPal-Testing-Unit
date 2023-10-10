@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="../../style/mobile.css">
     <link rel="stylesheet" href="../../plugins/boxicons-2.0.7/css/boxicons.css">
     <link rel="stylesheet" href="../../style/modals.css">
-    <title>WorkPal | WishList Detail</title>
+    <link rel="stylesheet" href="../../plugins/Fancybox v3/source/jquery.fancybox.css">
+    </link>
+    <link rel="stylesheet" href="../../plugins/Fancybox v3/source/helpers/jquery.fancybox-buttons.css">
+    </link>
+
+    <title>WorkPal | Service Detail</title>
 </head>
 
 <body>
@@ -47,7 +52,7 @@
                     </li>
 
                     <li class="nav-link">
-                        <a href="../../seller-pages/become-freelance.html" class="text-link">Become Freelancer</a>
+                        <a href="../../freelance-page/become-freelance.html" class="text-link">Become Freelancer</a>
                     </li>
 
                     <li class="nav-link">
@@ -69,7 +74,7 @@
                 </div>
 
                 <div class="cart">
-                    <i class='bx bx-bell' ></i>
+                    <i class='bx bx-bell'></i>
                 </div>
 
 
@@ -79,7 +84,7 @@
                 </div>
 
                 <div class="profile">
-                    <a href="client.html"><i class='bx bx-user'></i></a>
+                    <a href="../../profile/client.html"><i class='bx bx-user'></i></a>
                 </div>
             </div>
         </div>
@@ -139,6 +144,661 @@
     <!-- End Header -->
 
 
+
+    <!-- Main -->
+
+    <div class="sub-link-wrapper">
+        <div class="sub-link">
+            <a href="../../index.html"><i class='bx bx-home'></i></a>
+            <span>/</span>
+            <a href="../service-page.html" class="link">Hire Freelance</a>
+            <span>/</span>
+            <a href="detail-service.html" class="link">Service Detail</a>
+        </div>
+
+        <div class="right-share">
+            <span class="wishlist-heart active" id="img-heartlist"></span>
+            <button class="btn-shared modal-show" data-modal-target="share-modal">
+                <i class='bx bx-share-alt'></i>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="wrapper-service-detail">
+        <div class="content-service-detail">
+            <div class="service-detail-img">
+                <div class="images-left">
+                    <a class="fancybox fancybox-buttons" data-fancybox-group="button"
+                        href="../../resource/image/Workpal-freelanceImg/biiger-img.jpg"><img
+                            src="../../resource/image/Workpal-freelanceImg/biiger-img.jpg" alt=""></a>
+                </div>
+                <div class="img-right">
+                    <a class="fancybox fancybox-buttons" data-fancybox-group="button"
+                        href="../../resource/image/Workpal-freelanceImg/20.png"> <img
+                            src="../../resource/image/Workpal-freelanceImg/20.png" alt=""></a>
+                    <a class="fancybox fancybox-buttons" data-fancybox-group="button"
+                        href="../../resource/image/Workpal-freelanceImg/10.png"><img
+                            src="../../resource/image/Workpal-freelanceImg/10.png" alt=""></a>
+                    <a class="fancybox fancybox-buttons" data-fancybox-group="button"
+                        href="../../resource/image/Workpal-freelanceImg/7.png"><img
+                            src="../../resource/image/Workpal-freelanceImg/7.png" alt=""></a>
+                    <a class="fancybox fancybox-buttons" data-fancybox-group="button"
+                        href="../../resource/image/Workpal-freelanceImg/8.png"><img
+                            src="../../resource/image/Workpal-freelanceImg/8.png" alt=""></a>
+                    <a class="fancybox fancybox-buttons show-all-img" data-fancybox-group="button"
+                        href="../../resource/image/Workpal-freelanceImg/17.png">
+                        <i class='bx bx-category'></i>
+                        <p>Show all images</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="service-detail-info">
+                <div class="left-content-detail">
+                    <div class="title-gig">
+                        <h4>I will make Meachine learning and deep learning data sience , data Analyst Python projects</h4>
+                        <span class="status-gig"> <i class='bx bx-stats'></i>
+                            <p>Most Wanted</p>
+                        </span>
+                        <div class="gig-rating">
+                            <div class="star">
+                                <i class='bx bxs-star'></i> 4.8
+                            </div>
+                            <p>100 Reviews</p>
+                        </div>
+                    </div>
+
+
+                    <div class="freelance-img">
+                        <img src="../../resource/image/bg-section/Desain tanpa judul (34).png" alt="">
+                        <div class="text">
+                            <h5>Grow with Jeremy</h5>
+                            <p>It's been 7 years in Data Sience</p>
+                        </div>
+                    </div>
+
+                    <div class="text-overview">
+                        <p>
+                            Discover a passionate PHD scholar specializing in data analysis, machine learning & deep
+                            learning. I'm thrilled to offer my expertise in helping you uncover valuable insights from
+                            your data. With a strong foundation in computer science and a major in machine learning and
+                            data analytics, I bring a solid understanding of the underlying principles and algorithms to
+                            the table. My goal is to empower you with actionable knowledge that drives informed
+                            decision-making.
+                        </p>
+                    </div>
+
+                    <div class="job-status">
+                        <img src="../../resource/image/Workpal-freelanceImg/thunder-premium.jpg" alt="">
+                        <div class="text">
+                            <p>Highly Premium</p>
+                            <span>Known for exceptionally quick replies</span>
+                        </div>
+                    </div>
+
+
+                    <div class="about-gig">
+                        <h5>About Freelance Gig</h5>
+                        <div class="text-about-gig" id="read-more">
+                            <p>Hello there! I'm a passionate <b> data scientist & PHD scholar specializing in data
+                                    analysis, developing machine learning and deep learning models and automating
+                                    business tasks.</b></p>
+
+                            <p>Using Python and other cutting-edge tools, I'll develop robust models and conduct
+                                thorough analyses to extract meaningful patterns from your data. <b> I am proficient in
+                                    python and its libraries like numpy, pandas, matplotlib, seaborn, scikit learn,
+                                    tensorflow, keras and etc.</b></p>
+
+                            <p> <b>I am offering following services:</b></p>
+
+                            <li>Data Preprocessing</li>
+                            <li>Data Analysis & Visualization</li>
+                            <li>Statistical Analysis and Inference</li>
+                            <li>Hypothesis testing</li>
+                            <li>Machine learning & Deep Learning Projects</li>
+                            <li>Model Optimization</li>
+                            <li>Hyperparameter Tuning</li>
+                            <li>Classification, Regression, Computer Vision & NLP projects</li>
+                            <li>Unsupervised ML</li>
+                            <li>Dimensionality Reduction and much more</li>
+
+
+                            <p> <b>I have exceptional expertise in the following algorithms: </b></p>
+
+                            <span>KNN, Decision Trees, Random Forest, SVM, Logistic Regression, Gradient Boosting, Ada
+                                Boost, ANN, CNN, RNN, KMeans, DBSCAN, PCA, NOT LIMITED TO THESE</span>
+
+                            <p><i><b>I always prioritize the need of my customers and believe in top quality work with
+                                        on time delivery and 100% customer satisfaction. Order now to get your data
+                                        science problem and project solved!</b></i></p>
+
+                            <a href="javascript::void(0)" id="read-more-toggle" class="read-more">Read More...</a>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-your-freelance">
+                        <div class="section-profile">
+                            <div class="top">
+                                <div class="left">
+                                    <img src="../../resource/image/bg-section/Desain tanpa judul (34).png" alt="">
+                                    <img src="../../resource/image/Workpal-freelanceImg/verif.png" class="verif" alt="">
+                                </div>
+                                <div class="right">
+                                    <div class="status">
+                                        <h5>100</h5>
+                                        <p>Reviews</p>
+                                    </div>
+                                    <hr>
+                                    <div class="status">
+                                        <h5>4.8 <i class='bx bxs-star'></i></h5>
+                                        <p>ratings</p>
+                                    </div>
+                                    <hr>
+
+                                    <div class="status">
+                                        <h5>Premium Master</h5>
+                                        <p>Freelancer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="about-f-all">
+                                <i class='bx bx-briefcase-alt-2'></i>
+                                <p>My Work : Data Sience</p>
+                            </div>
+
+                            <div class="about-f-all">
+                                <i class='bx bx-globe'></i>
+                                <p>Lenguage : English , Indonesian , Japanese</p>
+                            </div>
+
+                            <div class="about-f-all">
+                                <i class='bx bxs-magic-wand'></i>
+                                <p>Skill : Excel , Data Visualization , Meachine Learning</p>
+                            </div>
+
+                            <span>Hello! I'm a passionate data scientist with a strong background in data analysis and
+                                machine learning. My journey into the world of data science began during my academic
+                                years, where I pursued a degree in Computer Science and later earned my Master's in Data
+                                Science. I'm currently working as a freelance data scientist, helping businesses harness
+                                the power of data to make informed decisions and gain a competitive edge.
+
+                            </span>
+
+                            <button class="btn-message-host">Contact Freelance</button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="photopolio">
+                        <h5>My Photopolio</h5>
+                        <div class="freelance-photopolio">
+                            <div class="img-left">
+                                <img src="../../resource/image/Workpal-freelanceImg/data-sience.jpg" alt="">
+                            </div>
+                            <div class="img-right">
+                                <img src="../../resource/image/Workpal-freelanceImg/data-sience-2.jpg" alt="">
+                                <img src="../../resource/image/Workpal-freelanceImg/data-sience-4.jpg" alt="">
+                                <img src="../../resource/image/Workpal-freelanceImg/data-sience5.jpg" alt="">
+                                <img src="../../resource/image/Workpal-freelanceImg/data-sience-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start Right -->
+                <div class="right-content-detail">
+                    <div class="hire-gig">
+                        <div class="content-menu-profile">
+                            <div class="header-link">
+                                <div class="link-sub active" data-tab="Basic">
+                                    <a href="javascript:void(0)">Basic</a>
+                                </div>
+                                <div class="link-sub" data-tab="standar">
+                                    <a href="javascript:void(0)">Standar</a>
+                                </div>
+                                <div class="link-sub" data-tab="premium">
+                                    <a href="javascript:void(0)">Premium Pro</a>
+                                </div>
+                            </div>
+
+                            <div class="subs-menu-content-show">
+                                <div class="basic-freelance" id="Basic">
+                                    <div class="title">
+                                        <span>Start From</span>
+                                        <p>$.200</p>
+                                    </div>
+                                    <div class="desc-basic">
+                                        <p>
+                                            1 page report, Data Cleansing , Meachine Learning
+                                        </p>
+
+                                        <div class="time-done">
+                                            <span><i class='bx bx-time-five'></i> 30 days</span>
+                                            <span><i class='bx bx-repeat'></i> 1 times Revision</span>
+                                        </div>
+
+                                        <div class="includes">
+                                            <span><i class='bx bx-check'></i>2 configured goals included</span>
+                                            <span><i class='bx bx-check'></i>Visualize results</span>
+                                            <span><i class='bx bx-check'></i>Meachine Learning</span>
+                                        </div>
+
+                                        <button class="btn-checkout"><a href="../../checkout/checkout.html"><i
+                                                    class='bx bxs-chevrons-right'></i> Continue</a></button>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="basic-freelance" id="premium">
+                                    <div class="title">
+                                        <span>Start From</span>
+                                        <p>$.700</p>
+                                    </div>
+                                    <div class="desc-basic">
+                                        <p>
+                                            9 page report, Data Cleansing , Meachine Learning , chart data , AI repair
+                                        </p>
+
+                                        <div class="time-done">
+                                            <span><i class='bx bx-time-five'></i> 25 days</span>
+                                            <span><i class='bx bx-repeat'></i> 5 times Revision</span>
+                                            <span><i class='bx bx-repeat'></i> free consultan only 1 years</span>
+                                        </div>
+
+                                        <div class="includes">
+                                            <span><i class='bx bx-check'></i>13 configured goals included</span>
+                                            <span><i class='bx bx-check'></i>Visualize results</span>
+                                            <span><i class='bx bx-check'></i>Meachine Learning</span>
+                                            <span><i class='bx bx-check'></i>MChart Data</span>
+                                            <span><i class='bx bx-check'></i>AI repair for Premium</span>
+                                        </div>
+
+                                        <button class="btn-checkout"><a href="../../checkout/checkout.html"><i
+                                                    class='bx bxs-chevrons-right'></i> Continue</a></button>
+                                    </div>
+                                </div>
+
+                                <div class="basic-freelance" id="standar">
+                                    <div class="title">
+                                        <span>Start From</span>
+                                        <p>$.400</p>
+                                    </div>
+                                    <div class="desc-basic">
+                                        <p>
+                                            3 page report, Data Cleansing , Meachine Learning , chart data
+                                        </p>
+
+                                        <div class="time-done">
+                                            <span><i class='bx bx-time-five'></i> 30 days</span>
+                                            <span><i class='bx bx-repeat'></i> 2 times Revision</span>
+                                        </div>
+
+                                        <div class="includes">
+                                            <span><i class='bx bx-check'></i>3 configured goals included</span>
+                                            <span><i class='bx bx-check'></i>Visualize results</span>
+                                            <span><i class='bx bx-check'></i>Meachine Learning</span>
+                                            <span><i class='bx bx-check'></i>MChart Data</span>
+                                        </div>
+
+                                        <button class="btn-checkout"><a href="../../checkout/checkout.html"><i
+                                                    class='bx bxs-chevrons-right'></i> Continue</a></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End Right -->
+            </div>
+        </div>
+
+
+        <div class="reviewer-wrapper">
+
+            <div class="rating-rewiew-top">
+                <div class="rating-title">
+                    <i class='bx bxs-star'></i>
+                    4.8.2 of 100 Reviews
+                </div>
+                <div class="bar-star">
+                    <span>Seller communication level</span>
+                    <input type="range" name="" id="">
+                    4.9
+                </div>
+                <div class="bar-star">
+                    <span>SelRecommend to a friend</span>
+                    <input type="range" name="" id="">
+                    5
+                </div>
+                <div class="bar-star">
+                    <span>Service as Describe</span>
+                    <input type="range" name="" id="">
+                    5
+                </div>
+            </div>
+
+            <div class="review-content">
+                <div class="sort-wrapper">
+                    <div class="sort-review" id="sort-review">
+                        <span>Sort By : <b>Most Relevan</b> <i class='bx bxs-chevron-up' ></i></span>
+                        <div class="show" id="show-review-sort">
+                            <p>Most Recent</p>
+                            <p>Most Popular</p>
+                        </div>
+                    </div>
+
+                    <div class="search-review">
+                        <input type="text" name="search" placeholder="Find the best reviews..."/>
+                        <i class='bx bx-search-alt-2' ></i>
+                    </div>
+                </div>
+
+
+                <div class="content-review">
+                    <div class="profile">
+                        <div class="img-text">
+                            <img src="../../resource/image/popular/man-icon.jpg" alt="">
+                            <div class="right">
+                                <h5>Rama</h5>
+                                <p>23 september 2023</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            5
+                        </div>
+                        <div class="review-text">
+                            The team worked quickly to get the website up and running, making sure all of the features
+                            and functionality requested were included. They tested the site multiple times to ensure it
+                            was working properly before turning it over.
+                        </div>
+
+                        <div class="help-ful">
+                            <p>Help full ?</p>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-up'></i>
+                                Yes
+                            </div>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-down'></i>
+                                No
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="profile">
+                        <div class="img-text">
+                            <img src="../../resource/image/popular/women-icon.jpg" alt="">
+                            <div class="right">
+                                <h5>Cayla</h5>
+                                <p>29 september 2023</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            5
+                        </div>
+                        <div class="review-text">
+                            Easy and quick to work with, a slight communication error that was solved quickly and professionally. Recommend.
+                        </div>
+
+                        <div class="help-ful">
+                            <p>Help full ?</p>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-up'></i>
+                                Yes
+                            </div>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-down'></i>
+                                No
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="profile">
+                        <div class="img-text">
+                            <img src="../../resource/image/popular/man-icon.jpg" alt="">
+                            <div class="right">
+                                <h5>Brian</h5>
+                                <p>3 october 2023</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            5
+                        </div>
+                        <div class="review-text">
+                            this guy has customised BuddyBoss for me in a way that most others that I considered did not even want to attempt. It wasn't straightforward & involved a lot of back & forth, but he remained patient & determined to meet my needs.
+
+                        </div>
+
+                        <div class="help-ful">
+                            <p>Help full ?</p>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-up'></i>
+                                Yes
+                            </div>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-down'></i>
+                                No
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="profile">
+                        <div class="img-text">
+                            <img src="../../resource/image/popular/women-icon.jpg" alt="">
+                            <div class="right">
+                                <h5>Sweety</h5>
+                                <p>10 december 2024</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            5
+                        </div>
+                        <div class="review-text">
+                            wow delivered very fast and also made all the changes I requested. Im looking forwards to finish more tasks with you. Thanks again Faizan.
+                        </div>
+
+                        <div class="help-ful">
+                            <p>Help full ?</p>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-up'></i>
+                                Yes
+                            </div>
+                            <div class="icon-hand">
+                                <i class='bx bxs-hand-down'></i>
+                                No
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-show-more">
+                        Show More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+     <!-- Suggestion Product -->
+     <div class="main-conteiner">
+        <h2 class="product-title">Recomendations Freelance Service</h2>
+
+        <div class="product-wrapper" id="productWrapper">
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+
+                    <a href="detail-service.html"><img src="../../resource/image/Workpal-freelanceImg/1.png" alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Mr.Smith</h4>
+                        </span>
+                        <p class="level-top">top Level</p>
+                    </div>
+                    <p class="text-box">
+                        I will make a great Website for you with Javascript and React Framework , with full code.
+                    </p>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.1,000</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="detail-service.html"><img src="../../resource/image/Workpal-freelanceImg/4.png" alt="Website Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Mrs.Darlia</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <p class="text-box">
+                        I can help you to to wrote 2000 words SEO article and blog for your post.
+                    </p>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i>Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.8<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.800</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="detail-service.html"><img src="../../resource/image/Workpal-freelanceImg/2.png" alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../../resource/image/popular/man-icon.jpg" alt="">
+                            <h4>Jhon Carl</h4>
+                        </span>
+                        <p class="level-pro">Pro Level</p>
+                    </div>
+                    <p class="text-box">
+                        I will be your Social Media Marketing manager and personal assistant.
+                    </p>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.7<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.500</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-content">
+                <div class="img-poster">
+                    <div class="whistlist-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <a href="detail-service.html"><img src="../../resource/image/Workpal-freelanceImg/3.png" alt="FrontEnd Freelance" class="slide-img"></a>
+
+                </div>
+                <div class="product-card">
+                    <div class="title">
+                        <span class="text-photo">
+                            <img src="../../resource/image/popular/women-icon.jpg" alt="">
+                            <h4>Jenifer Sam</h4>
+                        </span>
+                        <p class="level-new">New Level</p>
+                    </div>
+                    <p class="text-box">
+                        I can be your UI UX Design for your website and for your Application.
+                    </p>
+                    <div class="footer-card">
+                        <button type="button" class="btn-checkout"><i class='bx bx-cart'></i> Hire Now</button>
+                        <span class="price">
+                            <div class="rating">
+                                4.5<i class='bx bxs-star'></i>
+                            </div>
+                            <p>From $.310</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- End Main -->
 
 
 
@@ -283,12 +943,54 @@
         </div>
     </section>
 
+    <section class="modal-container" id="share-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="title">
+                    Share to Your Friends <b> .</b>
+                </div>
+                <div class="close-btn" id="close-modal">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="modal-content">
+                <div class="share-modal">
+                    <div class="share-content">
+                        <div class="btn-share">
+                            <i class='bx bxl-facebook-circle facebook'></i>
+                            Facebook
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bxl-whatsapp whatsapp'></i>
+                            Whatsapp
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bxl-linkedin-square linkedin'></i>
+                            Linkedin
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bxl-twitter twitter'></i>
+                            Twitter
+                        </div>
+                        <div class="btn-share">
+                            <i class='bx bx-link-alt link-alt'></i>
+                            Share Link
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    <!-- End WishList Section -->
+
     <script src="../../plugins/jquery v3.6.0/jquery.js"></script>
     <script src="../../plugins/smooth-scroll v15.1.3/dist/smooth-scroll.polyfills.js"></script>
+    <script src="../../plugins/Fancybox v3/source/jquery.fancybox.js"></script>
+    <script src="../../plugins/Fancybox v3/source/helpers/jquery.fancybox-buttons.js"></script>
     <script src="../../script/script.js"></script>
+
 </body>
 
 </html>
