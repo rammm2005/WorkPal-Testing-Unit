@@ -15,12 +15,14 @@ USE GIT CLONE https:myrepolink.git
 
 
 ## Pages Interface
-### Homepage UI 👇👀
+### All UI for Represent Pages 👇👀
 
 <details>
   <summary>Desktop UI</summary>
   <p align="center">
     <img src="resource/image/ui/Homepage-Desktop.png" alt="Home Page Desktop" width="70%">
+    <img src="resource/image/ui/Aboutpage-Desktop.png" alt="About Desktop" width="70%">
+    <img src="resource/image/ui/BecomeFreelance-Desktop.png" alt="Become Freelance Page Desktop" width="70%">
   </p>
 </details>
 
@@ -28,6 +30,8 @@ USE GIT CLONE https:myrepolink.git
   <summary>Tab UI</summary>
   <p align="center">
     <img src="resource/image/ui/Homepage-Tab.png" alt="Home Page Tab" width="50%">
+    <img src="resource/image/ui/Aboutpage-Tab.png" alt="Home Page Tab" width="50%">
+    <img src="resource/image/ui/BecomeFreelance-Tab.png" alt="Home Page Tab" width="50%">
   </p>
 </details>
 
@@ -35,6 +39,8 @@ USE GIT CLONE https:myrepolink.git
   <summary>Mobile UI</summary>
   <p align="center">
     <img src="resource/image/ui/Homepage-Mobile.png" alt="Home Page Mobile" width="30%">
+    <img src="resource/image/ui/Aboutpage-Mobile.png" alt="Home Page Mobile" width="30%">
+    <img src="resource/image/ui/BecomeFreelance-Mobile.png" alt="Home Page Mobile" width="30%">
   </p>
 </details>
 
